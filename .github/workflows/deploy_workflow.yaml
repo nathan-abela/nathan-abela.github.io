@@ -3,7 +3,7 @@ name: Build and Deploy to GitHub Pages
 on: [push]
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -11,13 +11,19 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install Packages 🔧
-        run: npm install
+        run: npm ci
 
       - name: Build Project 🏗️
         run: npm run build
+
+      - name: Export Static HTML 🛠️
+        run: npm run export
+
+      - name: Disable Jekyll Build 🔨
+        run: touch ./out/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages
-          folder: build
+          folder: out
