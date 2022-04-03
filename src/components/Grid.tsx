@@ -2,19 +2,19 @@ import React from 'react';
 
 import styled, { css } from 'styled-components';
 import {
-    BordersProps,
-    FlexboxProps,
-    GridGapProps,
-    GridProps as StyledGridProps,
-    LayoutProps,
-    SpaceProps,
     borders,
     compose,
     flexbox,
     grid,
     gridGap,
     layout,
-    space
+    space,
+    BordersProps,
+    FlexboxProps,
+    GridGapProps,
+    GridProps as StyledGridProps,
+    LayoutProps,
+    SpaceProps
 } from 'styled-system';
 
 export type GridProps = BordersProps &

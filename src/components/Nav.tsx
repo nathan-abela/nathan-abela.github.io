@@ -15,6 +15,10 @@ const states: { [key: string]: React.CSSProperties } = {
         left: '84px',
         width: '60px',
     },
+    '/education': {
+        left: '84px',
+        width: '60px',
+    },
     '/work': {
         left: '160px',
         width: '56px',
@@ -34,7 +38,7 @@ const NavLink = styled.a`
     padding: 0;
 
     cursor: pointer;
-    transition: opacity 0.4s ease 0s;
+    transition: opacity 0.25s ease 0s;
     text-decoration: none;
 
     color: inherit;
@@ -75,7 +79,7 @@ const Nav = (): JSX.Element => {
                     gridGap='2rem'
                     alignItems='center'
                     justifyItems='center'
-                    gridTemplateColumns='repeat(4, auto)'
+                    gridTemplateColumns='repeat(5, auto)'
                     style={{
                         borderRadius: '26px',
                         background: 'rgba(0, 0, 0, 0.04)',
@@ -93,7 +97,8 @@ const Nav = (): JSX.Element => {
                         }}
                     />
                     <NavLink href='/'>Home</NavLink>
-                    <NavLink href='/inprogress'>About</NavLink>
+                    <NavLink href='/about'>About</NavLink>
+                    <NavLink href='/inprogress'>Education</NavLink>
                     <NavLink href='/inprogress'>Work</NavLink>
                     <NavLink href='/inprogress'>Projects</NavLink>
                 </Grid>

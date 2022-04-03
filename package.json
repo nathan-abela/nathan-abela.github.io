@@ -11,18 +11,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/styled-components": "^5.1.14",
-    "@types/styled-system": "^5.1.13",
-    "babel-plugin-styled-components": "^1.13.2",
+    "@types/styled-components": "^5.1.24",
+    "@types/styled-system": "^5.1.15",
+    "babel-plugin-styled-components": "^1.13.3",
     "babel-preset-next": "^1.4.0",
     "framer-motion": "^4.1.17",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-icons": "^4.2.0",
-    "styled-components": "^5.3.1",
+    "react-icons": "^4.3.1",
+    "styled-components": "^5.3.3",
     "styled-system": "^5.1.5",
-    "typescript": "^4.4.3"
+    "typescript": "^4.6.2"
   },
   "devDependencies": {
     "eslint": "7.32.0",

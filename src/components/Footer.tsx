@@ -20,7 +20,7 @@ const StyledFooter = styled.footer`
 
     width: 100%;
     height: 100px;
-    padding: 60px 20px 100px;
+    padding: 60px 20px 120px;
 `;
 
 const FooterGrid = styled.div`
@@ -59,10 +59,10 @@ const Footer = (): JSX.Element => {
 
     return (
         <StyledFooter>
-            <Container paddingY='25px'>
+            <Container paddingY='30px'>
                 <Grid gridGap='30px'>
                     <Link href='/'>Home</Link>
-                    <Link href='/inprogress'>About</Link>
+                    <Link href='/about'>About</Link>
                     <Link href='/inprogress'>Projects</Link>
                     <Link href='mailto:nathanabela7@gmail.com'>Contact</Link>
                 </Grid>

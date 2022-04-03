@@ -52,7 +52,7 @@ const Button = styled.button<
     justify-content: center;
 
     margin: 0;
-    padding: 18px 50px;
+    padding: 20px 50px;
 
     cursor: pointer;
     transition: ease-in-out 0.15s;
@@ -77,20 +77,20 @@ const Button = styled.button<
                 },
                 primary: {
                     color: 'white',
-                    backgroundColor: '#0e0e0e',
+                    backgroundColor: '#050505',
                     '&:hover': {
                         color: 'white',
                         backgroundColor: 'black',
-                        transform: 'scale(1.04)',
+                        transform: 'scale(1.05)',
                     },
                 },
                 secondary: {
                     color: 'black',
-                    backgroundColor: '#f5f6fa',
+                    backgroundColor: '#f5f5f5',
                     '&:hover': {
                         color: 'white',
                         backgroundColor: 'black',
-                        transform: 'scale(1.04)',
+                        transform: 'scale(1.05)',
                     },
                 },
             },

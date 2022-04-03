@@ -5,6 +5,18 @@ import { motion } from 'framer-motion';
 import styles from '@styles/Home.module.css';
 import { Container, Title, Button, Grid, Link, Text } from 'src/components';
 
+function getAge(dateString: string | number | Date) {
+    let currDate = new Date();
+    let birthDate = new Date(dateString);
+    let month = currDate.getMonth() - birthDate.getMonth();
+    let age = currDate.getFullYear() - birthDate.getFullYear();
+
+    if (month < 0 || (month === 0 && currDate.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
+}
+
 const Home = (): JSX.Element => (
     <Container>
         <Container
@@ -27,7 +39,7 @@ const Home = (): JSX.Element => (
                 <Title>Nathan Abela</Title>
                 <Title
                     fontSize='2rem'
-                    color='rgba(0, 0, 0, 0.6)'
+                    color='rgba(0, 0, 0, 0.7)'
                     fontWeight='500'
                     as='h2'
                 >
@@ -37,13 +49,13 @@ const Home = (): JSX.Element => (
             <Container maxWidth='700px' gridGap='4rem'>
                 <Container>
                     <Text textAlign='center'>
-                        I am a 21 year old student who is currently pursuing a Bachelor of
+                        I am a {getAge('1999/12/25')} year old student who is currently pursuing a Bachelor of
                         Science in Software Development, with experience in Backend,
                         Frontend, and Mobile Development. Projects I have worked on can be
                         viewed on the <a href='/projects'>projects</a> page.
                     </Text>
                 </Container>
-                <Link href='/inprogress'>
+                <Link href='/about'>
                     <Button>More about me &rarr;</Button>
                 </Link>
             </Container>
