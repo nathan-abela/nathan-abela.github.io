@@ -14,20 +14,19 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
 
+      - name: Setup Node.js 🛠️
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
       - name: Install Packages 🔧
         run: npm ci
 
       - name: Build Project 🏗️
         run: npm run build
 
-      - name: Export Static HTML 🛠️
-        run: npm run export
-
-      - name: Disable Jekyll Build 🔨
-        run: touch ./out/.nojekyll
-
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: gh-pages
-          folder: out
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
