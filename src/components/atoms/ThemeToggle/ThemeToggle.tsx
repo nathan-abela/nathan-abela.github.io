@@ -18,6 +18,7 @@ const ThemeToggle = () => {
 	};
 
 	return (
+		// eslint-disable-next-line prettier/prettier
 		<StyledThemeToggle
 			onClick={handleToggle}
 			title={`Switch to ${lightTheme ? 'dark' : 'light'} theme`}

@@ -1,82 +1,84 @@
-import styled from 'styled-components';
 import { differenceInYears } from 'date-fns';
+import styled from 'styled-components';
 
 import { Container } from 'Atoms/Container';
 import { SeoHead } from 'Atoms/SeoHead';
 import { TechnologyIcons } from 'Molecules/TechnologyIcons';
 
 function About() {
-    return (
-        <>
-            <SeoHead
-                title="Nathan Abela - Portfolio"
-                description="Frontend Engineer with focus on Angular and Stencil.js."
-            />
+	return (
+		<>
+			{/* eslint-disable-next-line prettier/prettier */}
+			<SeoHead
+				title="Nathan Abela - Portfolio"
+				description="Frontend Engineer with focus on Angular and Stencil.js."
+			/>
 
-            <Container>
-                <ContentWrapper>
+			<Container>
+				<ContentWrapper>
+					<Headline>
+						Hi, I&apos;m Nathan
+						<span>👋</span>
+					</Headline>
 
-                    <Headline>
-                        Hi, I&apos;m Nathan
-                        <span>👋</span>
-                    </Headline>
+					<Center>
+						<p style={{ lineHeight: 1.8 }}>
+							I am a {differenceInYears(new Date(), new Date('1999-12-25'))} years old frontend developer from Malta.
+							The technologies I work with are JavaScript, and CSS with a focus on the Angular, Stencil.js, and Next.js
+							frameworks. I am focused on creating high-quality software products with clean user interfaces in mind. I
+							also occasionally do some UI designs, which you can find on my{' '}
+							{/* eslint-disable-next-line prettier/prettier */}
+							<a
+								href="/portfolio"
+								title="Portfolio page"
+								target="_self"
+								rel="noopener noreferrer"
+							>
+								projects
+							</a>{' '}
+							page.
+						</p>
+					</Center>
 
-                    <Center>
-                        <p style={{ lineHeight: 1.8 }}>
-                            I am a {differenceInYears(new Date(), new Date('1999-12-25'))}{' '}
-                            years old frontend developer from Malta. The technologies I work with are JavaScript, and CSS with a focus on the Angular, Stencil.js, and Next.js frameworks. I am focused on creating high-quality software products with clean user interfaces in mind. I also occasionally do some UI designs, which you can find on my {' '}
-                            <a
-                                href="/portfolio"
-                                title="Portfolio page"
-                                target="_self"
-                                rel="noopener noreferrer"
-                            >
-                                projects
-                            </a>
-                            {' '}page.
-                        </p>
-                    </Center>
-
-                    <Subheading>Technologies I Frequently Use</Subheading>
-                    <TechnologyIcons />
-
-                </ContentWrapper>
-            </Container>
-        </>
-    );
+					<Subheading>Technologies I Frequently Use</Subheading>
+					<TechnologyIcons />
+				</ContentWrapper>
+			</Container>
+		</>
+	);
 }
 
 const ContentWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
 `;
 
 const Headline = styled.h2`
-    font-size: 56px;
-    margin: 0;
+	font-size: 56px;
+	margin: 0;
 
-    span {
-        display: inline-block;
-    }
+	span {
+		display: inline-block;
+	}
 
-    @keyframes wave {
-        0% {
-            transform: rotate(0);
-        }
-        50% {
-            transform: rotate(-10deg);
-        }
-        100% {
-            transform: rotate(10deg);
-        }
-    }
+	@keyframes wave {
+		0% {
+			transform: rotate(0);
+		}
+		50% {
+			transform: rotate(-10deg);
+		}
+		100% {
+			transform: rotate(10deg);
+		}
+	}
 
-    &:hover span {
-        animation: wave 0.5s ease infinite;
-    }
+	&:hover span {
+		animation: wave 0.5s ease infinite;
+	}
 
 	@media screen and (max-width: 768px) {
 		font-size: 48px;
@@ -104,7 +106,7 @@ const Subheading = styled.h3`
 		font-size: 32px;
 	}
 
-    @media screen and (max-width: 425px) {
+	@media screen and (max-width: 425px) {
 		font-size: 24px;
 	}
 

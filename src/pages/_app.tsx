@@ -27,14 +27,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 			dispatch(setTheme('dark'));
 		}
 
-		window
-			.matchMedia('(prefers-color-scheme: dark)')
-			.addEventListener('change', handleEventListener);
+		window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', handleEventListener);
 
-		return () =>
-			window
-				.matchMedia('(prefers-color-scheme: dark)')
-				.removeEventListener('change', handleEventListener);
+		return () => window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change', handleEventListener);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	return (

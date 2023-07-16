@@ -7,6 +7,7 @@ const SocialIcons: FC = () => {
 	return (
 		<StyledSocialIcons>
 			<li>
+				{/* eslint-disable-next-line prettier/prettier */}
 				<a
 					href="https://github.com/nathan-abela"
 					target="_blank"
@@ -17,6 +18,7 @@ const SocialIcons: FC = () => {
 				</a>
 			</li>
 			<li>
+				{/* eslint-disable-next-line prettier/prettier */}
 				<a
 					href="https://www.linkedin.com/in/nathan-abela"
 					target="_blank"
@@ -27,6 +29,7 @@ const SocialIcons: FC = () => {
 				</a>
 			</li>
 			<li>
+				{/* eslint-disable-next-line prettier/prettier */}
 				<a
 					href="https://www.youtube.com/@nathanabela"
 					target="_blank"
@@ -37,6 +40,7 @@ const SocialIcons: FC = () => {
 				</a>
 			</li>
 			<li>
+				{/* eslint-disable-next-line prettier/prettier */}
 				<a
 					href="mailto:nathanabela7@gmail.com"
 					target="_blank"

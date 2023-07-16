@@ -7,6 +7,7 @@ import { SeoHead } from 'Atoms/SeoHead';
 function Home() {
 	return (
 		<>
+			{/* eslint-disable-next-line prettier/prettier */}
 			<SeoHead
 				title="Nathan Abela - Portfolio"
 				description="Frontend Engineer with focus on Angular and Stencil.js."
@@ -20,6 +21,7 @@ function Home() {
 					</div>
 
 					<div style={{ marginTop: 32, marginBottom: 32 }}>
+						{/* eslint-disable-next-line prettier/prettier */}
 						<Image
 							src="/profilePicture.jpg"
 							alt="Nathan Abela profile picture"
@@ -29,7 +31,11 @@ function Home() {
 					</div>
 				</div>
 				<p style={{ lineHeight: 1.8 }}>
-					I am passionate software engineer from Malta, currently pursuing a Bachelor of Science in Software Development. Specialised in frontend development using Angular, StencilJS, and NextJS, and have successfully developed mobile apps, built web applications, and designed RESTful APIs. My strong suite of skills includes effective communication, problem-solving, and collaboration. Explore my portfolio for a glimpse of my {' '}
+					I am passionate software engineer from Malta, currently pursuing a Bachelor of Science in Software
+					Development. Specialised in frontend development using Angular, StencilJS, and NextJS, and have successfully
+					developed mobile apps, built web applications, and designed RESTful APIs. My strong suite of skills includes
+					effective communication, problem-solving, and collaboration. Explore my portfolio for a glimpse of my{' '}
+					{/* eslint-disable-next-line prettier/prettier */}
 					<a
 						href="/portfolio"
 						title="Portfolio page"
@@ -42,7 +48,6 @@ function Home() {
 				</p>
 
 				<Button href="/projects">Projects</Button>
-
 			</Container>
 		</>
 	);

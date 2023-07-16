@@ -5,27 +5,37 @@ import Close from 'Public/assets/close.svg';
 import Menu from 'Public/assets/menu.svg';
 
 // Social Icons
+import Email from 'Public/assets/email.svg';
 import Github from 'Public/assets/github.svg';
 import Linkedin from 'Public/assets/linkedin.svg';
 import Youtube from 'Public/assets/youtube.svg';
-import Email from 'Public/assets/email.svg';
 
 // Technology Icons
-import Javascript from 'Public/assets/javascript.svg';
-import Typescript from 'Public/assets/typescript.svg';
 import Angular from 'Public/assets/angular.svg';
-import Stenciljs from 'Public/assets/stenciljs.svg';
-import Nextjs from 'Public/assets/nextjs.svg';
-import Storybook from 'Public/assets/storybook.svg';
-import Python from 'Public/assets/python.svg';
 import Csharp from 'Public/assets/csharp.svg';
+import Javascript from 'Public/assets/javascript.svg';
+import Nextjs from 'Public/assets/nextjs.svg';
+import Python from 'Public/assets/python.svg';
+import Stenciljs from 'Public/assets/stenciljs.svg';
+import Storybook from 'Public/assets/storybook.svg';
+import Typescript from 'Public/assets/typescript.svg';
 
 export interface IconProps {
 	icon:
-	'CLOSE' | 'MENU' |
-	'GITHUB' | 'LINKEDIN' | 'YOUTUBE' | 'EMAIL' |
-	'JAVASCRIPT' | 'TYPESCRIPT' | 'ANGULAR' | 'STENCILJS' |
-	'NEXTJS' | 'STORYBOOK' | 'PYTHON' | 'CSHARP';
+		| 'CLOSE'
+		| 'MENU'
+		| 'GITHUB'
+		| 'LINKEDIN'
+		| 'YOUTUBE'
+		| 'EMAIL'
+		| 'JAVASCRIPT'
+		| 'TYPESCRIPT'
+		| 'ANGULAR'
+		| 'STENCILJS'
+		| 'NEXTJS'
+		| 'STORYBOOK'
+		| 'PYTHON'
+		| 'CSHARP';
 }
 
 const Icon: FC<IconProps> = ({ icon }) => {

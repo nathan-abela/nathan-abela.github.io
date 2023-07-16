@@ -10,6 +10,7 @@ const TechnologyIcons: FC = () => {
 				<div className="card">
 					<div className="icon tooltip">
 						{/* <span className="tooltip-text">Javascript</span> */}
+						{/* eslint-disable-next-line prettier/prettier */}
 						<a
 							href="https://www.javascript.com"
 							target="_blank"
@@ -23,6 +24,7 @@ const TechnologyIcons: FC = () => {
 
 				<div className="card">
 					<div className="icon">
+						{/* eslint-disable-next-line prettier/prettier */}
 						<a
 							href="https://www.typescriptlang.org"
 							target="_blank"
@@ -36,6 +38,7 @@ const TechnologyIcons: FC = () => {
 
 				<div className="card">
 					<div className="icon">
+						{/* eslint-disable-next-line prettier/prettier */}
 						<a
 							href="https://angular.io"
 							target="_blank"
@@ -49,6 +52,7 @@ const TechnologyIcons: FC = () => {
 
 				<div className="card">
 					<div className="icon">
+						{/* eslint-disable-next-line prettier/prettier */}
 						<a
 							href="https://stenciljs.com"
 							target="_blank"
@@ -62,6 +66,7 @@ const TechnologyIcons: FC = () => {
 
 				<div className="card">
 					<div className="icon">
+						{/* eslint-disable-next-line prettier/prettier */}
 						<a
 							href="https://nextjs.org"
 							target="_blank"
@@ -75,6 +80,7 @@ const TechnologyIcons: FC = () => {
 
 				<div className="card">
 					<div className="icon">
+						{/* eslint-disable-next-line prettier/prettier */}
 						<a
 							href="https://storybook.js.org"
 							target="_blank"
@@ -88,6 +94,7 @@ const TechnologyIcons: FC = () => {
 
 				<div className="card">
 					<div className="icon">
+						{/* eslint-disable-next-line prettier/prettier */}
 						<a
 							href="https://www.python.org"
 							target="_blank"
@@ -101,6 +108,7 @@ const TechnologyIcons: FC = () => {
 
 				<div className="card">
 					<div className="icon">
+						{/* eslint-disable-next-line prettier/prettier */}
 						<a
 							href="https://docs.microsoft.com/dotnet/csharp"
 							target="_blank"
@@ -111,9 +119,8 @@ const TechnologyIcons: FC = () => {
 						</a>
 					</div>
 				</div>
-
 			</div>
-		</StyledTechnologyIcons >
+		</StyledTechnologyIcons>
 	);
 };
 
