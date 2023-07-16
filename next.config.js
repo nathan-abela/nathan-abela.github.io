@@ -1,8 +1,17 @@
 // next.config.js
 
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
+
+let assetPrefix = './';
+
+if (isGithubActions) {
+	const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '');
+
+	assetPrefix = `/${repo}/`;
+}
+
 module.exports = {
-	assetPrefix: process.env.NODE_ENV === 'production' ? '/nathan-abela.github.io' : '',
-	basePath: process.env.NODE_ENV === 'production' ? '/nathan-abela.github.io' : '',
+	assetPrefix: assetPrefix,
 	webpack(config) {
 		config.module.rules.push({
 			test: /\.svg?$/,
