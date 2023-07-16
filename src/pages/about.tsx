@@ -2,13 +2,20 @@ import styled from 'styled-components';
 import { differenceInYears } from 'date-fns';
 
 import { Container } from 'Atoms/Container';
+import { SeoHead } from 'Atoms/SeoHead';
 import { TechnologyIcons } from 'Molecules/TechnologyIcons';
 
 function About() {
     return (
         <>
+            <SeoHead
+                title="Nathan Abela - Portfolio"
+                description="Frontend Engineer with focus on Angular and Stencil.js."
+            />
+
             <Container>
                 <ContentWrapper>
+
                     <Headline>
                         Hi, I&apos;m Nathan
                         <span>👋</span>

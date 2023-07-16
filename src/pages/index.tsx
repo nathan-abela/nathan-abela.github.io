@@ -1,11 +1,17 @@
 import styled from 'styled-components';
 
-import { Container } from 'Atoms/Container';
 import { Button } from 'Atoms/Buttons';
+import { Container } from 'Atoms/Container';
+import { SeoHead } from 'Atoms/SeoHead';
 
 function Home() {
 	return (
 		<>
+			<SeoHead
+				title="Nathan Abela - Portfolio"
+				description="Frontend Engineer with focus on Angular and Stencil.js."
+			/>
+
 			<Container>
 				<div style={{ display: 'flex', alignItems: 'center' }}>
 					<div style={{ flex: 1 }}>
@@ -34,7 +40,9 @@ function Home() {
 					</a>
 					.
 				</p>
+
 				<Button href="/projects">Projects</Button>
+
 			</Container>
 		</>
 	);
