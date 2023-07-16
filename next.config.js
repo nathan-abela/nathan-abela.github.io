@@ -1,7 +1,7 @@
 module.exports = {
+	distDir: 'out',
 	poweredByHeader: false,
-	assetPrefix: process.env.ASSET_HOST || '',
-	productionBrowserSourceMaps: process.env.NODE_ENV === 'production',
+	productionBrowserSourceMaps: false,
 	webpack(config) {
 		config.module.rules.push({
 			test: /\.svg?$/,
