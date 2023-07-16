@@ -1,31 +1,51 @@
 {
   "name": "nathan-abela.github.io",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "private": true,
   "homepage": "https://nathan-abela.github.io/",
   "scripts": {
     "dev": "next dev",
     "start": "next start",
     "build": "next build",
-    "export": "next export",
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/styled-components": "^5.1.24",
-    "@types/styled-system": "^5.1.15",
-    "babel-plugin-styled-components": "^1.13.3",
-    "babel-preset-next": "^1.4.0",
-    "framer-motion": "^4.1.17",
-    "next": "11.1.2",
+    "@svgr/webpack": "^5.5.0",
+    "classnames": "^2.3.1",
+    "date-fns": "^2.25.0",
+    "gray-matter": "^4.0.3",
+    "next": "^12.1.5",
+    "next-redux-wrapper": "^7.0.5",
+    "nprogress": "^0.2.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-icons": "^4.3.1",
+    "react-is": "^18.2.0",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.0",
     "styled-components": "^5.3.3",
-    "styled-system": "^5.1.5",
-    "typescript": "^4.6.2"
+    "typescript": "5.1.6"
   },
   "devDependencies": {
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
+    "@types/node": "18.13.0",
+    "@types/nprogress": "^0.2.0",
+    "@types/react": "^18.0.4",
+    "@types/react-redux": "^7.1.20",
+    "@types/styled-components": "^5.1.15",
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
+    "babel-plugin-styled-components": "^1.13.3",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^25.2.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.4.1"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }

@@ -1,127 +1,109 @@
-import React from 'react';
+import styled from 'styled-components';
+import { differenceInYears } from 'date-fns';
 
-import { motion } from 'framer-motion';
-import Head from 'next/head';
-import {
-    SiC,
-    SiCsharp,
-    SiJava,
-    SiJavascript,
-    SiMicrosoftsqlserver,
-    SiNextdotjs,
-    SiNodedotjs,
-    SiPython,
-    SiReact,
-    SiTypescript
-} from 'react-icons/si';
+import { Container } from 'Atoms/Container';
+import { TechnologyIcons } from 'Molecules/TechnologyIcons';
 
-import { Title, Text, Container, Grid, Link, Card } from '@components';
-
-const About = (): JSX.Element => {
-    const stacks = React.useMemo(
-        () => [
-            {
-                Icon: SiPython,
-                url: 'https://www.python.org',
-            },
-            {
-                Icon: SiCsharp,
-                url: 'https://docs.microsoft.com/dotnet/csharp',
-            },
-            {
-                Icon: SiC,
-                url: 'https://docs.microsoft.com/cpp/c-language',
-            },
-            {
-                Icon: SiJava,
-                url: 'https://www.java.com',
-            },
-            {
-                Icon: SiNodedotjs,
-                url: 'https://nodejs.org',
-            },
-            {
-                Icon: SiJavascript,
-                url: 'https://www.javascript.com',
-            },
-            {
-                Icon: SiTypescript,
-                url: 'https://www.typescriptlang.org',
-            },
-            {
-                Icon: SiReact,
-                url: 'https://reactjs.org',
-            },
-            {
-                Icon: SiNextdotjs,
-                url: 'https://nextjs.org',
-            },
-            {
-                Icon: SiMicrosoftsqlserver,
-                url: 'https://www.microsoft.com/sql-server',
-            }
-        ],
-        [],
-    );
-
+function About() {
     return (
-        <Container>
-            <Head>
-                <title>About</title>
-            </Head>
-            <Container alignContent="center" alignItems="center">
-                <Title fontSize={['3rem', '4rem']} as="h2">
-                    Hi, I&apos;m Nathan {''}
-                    <motion.span
-                        initial={{ display: 'inline-block' }}
-                        animate={{ rotate: [0, 15, -5, 15, -5, 10, 0, 0] }}
-                        transition={{
-                            repeat: Infinity,
-                            repeatType: 'reverse',
-                            duration: 2,
-                        }}
-                    >
-                        👋
-                    </motion.span>
-                </Title>
-                <Container maxWidth={['100%', '700px']} marginY="2rem">
-                    <Text textAlign='center'>
-                        I&apos;m a Software Developer from Malta. Focused on creating high-quality
-                        software products with clean user interfaces in mind.
-                        I also occasionally do some UI/Infographic designs, which you can find on my {''}
-                        <a href='/projects'>projects</a> page.
-                    </Text>
-                </Container>
-            </Container>
+        <>
+            <Container>
+                <ContentWrapper>
+                    <Headline>
+                        Hi, I&apos;m Nathan
+                        <span>👋</span>
+                    </Headline>
 
-            <Container
-                paddingY="4rem"
-                gridGap="2rem"
-                alignContent="center"
-                alignItems="center"
-                textAlign="center"
-                width="100%"
-            >
-                <Title fontSize="40px" as="h2">
-                    Technologies I Frequently Use
-                </Title>
-                <Grid
-                    gridTemplateColumns={['repeat(3, 1fr)', 'repeat(5, 1fr)']}
-                    gridGap="1rem"
-                    justifyItems="center"
-                    maxWidth="40rem"
-                >
-                    {stacks.map(({ Icon, url }, i) => (
-                        <Link href={url} key={url}>
-                            <Card key={i}>
-                                <Icon size="2rem" />
-                            </Card>
-                        </Link>
-                    ))}
-                </Grid>
+                    <Center>
+                        <p style={{ lineHeight: 1.8 }}>
+                            I am a {differenceInYears(new Date(), new Date('1999-12-25'))}{' '}
+                            years old frontend developer from Malta. The technologies I work with are JavaScript, and CSS with a focus on the Angular, Stencil.js, and Next.js frameworks. I am focused on creating high-quality software products with clean user interfaces in mind. I also occasionally do some UI designs, which you can find on my {' '}
+                            <a
+                                href="/portfolio"
+                                title="Portfolio page"
+                                target="_self"
+                                rel="noopener noreferrer"
+                            >
+                                projects
+                            </a>
+                            {' '}page.
+                        </p>
+                    </Center>
+
+                    <Subheading>Technologies I Frequently Use</Subheading>
+                    <TechnologyIcons />
+
+                </ContentWrapper>
             </Container>
-        </Container>
+        </>
     );
-};
+}
+
+const ContentWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+`;
+
+const Headline = styled.h2`
+    font-size: 56px;
+    margin: 0;
+
+    span {
+        display: inline-block;
+    }
+
+    @keyframes wave {
+        0% {
+            transform: rotate(0);
+        }
+        50% {
+            transform: rotate(-10deg);
+        }
+        100% {
+            transform: rotate(10deg);
+        }
+    }
+
+    &:hover span {
+        animation: wave 0.5s ease infinite;
+    }
+
+	@media screen and (max-width: 768px) {
+		font-size: 48px;
+	}
+
+	@media screen and (max-width: 425px) {
+		font-size: 32px;
+	}
+
+	@media screen and (max-width: 320px) {
+		font-size: 24px;
+	}
+`;
+
+const Center = styled.div`
+	text-align: center;
+	margin: 16px 0;
+`;
+
+const Subheading = styled.h3`
+	font-size: 40px;
+	margin: 32px 0;
+
+	@media screen and (max-width: 768px) {
+		font-size: 32px;
+	}
+
+    @media screen and (max-width: 425px) {
+		font-size: 24px;
+	}
+
+	@media screen and (max-width: 320px) {
+		font-size: 20px;
+	}
+`;
 
 export default About;

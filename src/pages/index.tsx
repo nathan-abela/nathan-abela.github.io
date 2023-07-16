@@ -1,106 +1,90 @@
-import React from 'react';
+import styled from 'styled-components';
 
-import { motion } from 'framer-motion';
+import { Container } from 'Atoms/Container';
+import { Button } from 'Atoms/Buttons';
 
-import styles from '@styles/Home.module.css';
-import { Container, Title, Button, Grid, Link, Text } from 'src/components';
+function Home() {
+	return (
+		<>
+			<Container>
+				<div style={{ display: 'flex', alignItems: 'center' }}>
+					<div style={{ flex: 1 }}>
+						<Headline>Nathan Abela</Headline>
+						<Subheading>Frontend Engineer</Subheading>
+					</div>
 
-function getAge(dateString: string | number | Date) {
-    let currDate = new Date();
-    let birthDate = new Date(dateString);
-    let month = currDate.getMonth() - birthDate.getMonth();
-    let age = currDate.getFullYear() - birthDate.getFullYear();
-
-    if (month < 0 || (month === 0 && currDate.getDate() < birthDate.getDate())) {
-        age--;
-    }
-    return age;
+					<div style={{ marginTop: 32, marginBottom: 32 }}>
+						<Image
+							src="/profilePicture.jpg"
+							alt="Nathan Abela profile picture"
+							width={180}
+							height={180}
+						/>
+					</div>
+				</div>
+				<p style={{ lineHeight: 1.8 }}>
+					I am passionate software engineer from Malta, currently pursuing a Bachelor of Science in Software Development. Specialised in frontend development using Angular, StencilJS, and NextJS, and have successfully developed mobile apps, built web applications, and designed RESTful APIs. My strong suite of skills includes effective communication, problem-solving, and collaboration. Explore my portfolio for a glimpse of my {' '}
+					<a
+						href="/portfolio"
+						title="Portfolio page"
+						target="_self"
+						rel="noopener noreferrer"
+					>
+						projects
+					</a>
+					.
+				</p>
+				<Button href="/projects">Projects</Button>
+			</Container>
+		</>
+	);
 }
 
-const Home = (): JSX.Element => (
-    <Container>
-        <Container
-            justifyContent='center'
-            alignContent='center'
-            alignItems='center'
-            textAlign='center'
-            paddingY='20px'
-            paddingBottom='40px'
-            gridGap='4rem'
-        >
-            <Container alignItems='center' alignContent='center'>
-                <img
-                    src='/profilePicture.jpg'
-                    alt='Nathan Abela'
-                    width='160px'
-                    height='160px'
-                    className={styles.image}
-                />
-                <Title>Nathan Abela</Title>
-                <Title
-                    fontSize='2rem'
-                    color='rgba(0, 0, 0, 0.7)'
-                    fontWeight='500'
-                    as='h2'
-                >
-                    Software Developer
-                </Title>
-            </Container>
-            <Container maxWidth='700px' gridGap='4rem'>
-                <Container>
-                    <Text textAlign='center'>
-                        I am a {getAge('1999/12/25')} year old student who is currently pursuing a Bachelor of
-                        Science in Software Development, with experience in Backend,
-                        Frontend, and Mobile Development. Projects I have worked on can be
-                        viewed on the <a href='/projects'>projects</a> page.
-                    </Text>
-                </Container>
-                <Link href='/about'>
-                    <Button>More about me &rarr;</Button>
-                </Link>
-            </Container>
-        </Container>
+const Headline = styled.h2`
+	font-size: 56px;
+	margin: 0;
 
-        <Container alignItems='center' paddingY='4rem'>
-            <Container maxWidth='600px' alignItems='center' alignContent='center'>
-                <Title fontSize='3rem' as='h3'>
-                    Get in touch
-                </Title>
-                <Text textAlign='center'>
-                    Feel free to contact me if you want to get in touch!
-                </Text>
-                <Grid
-                    gridGap='2rem'
-                    marginTop='2rem'
-                    gridTemplateColumns={['1fr', 'repeat(2, 1fr)']}
-                    justifyItems='stretch'
-                    alignItems='stretch'
-                >
-                    <Link href='mailto:nathanabela7@gmail.com'>
-                        <Button width='100%'>
-                            <motion.span
-                                initial={{ display: 'inline-block' }}
-                                animate={{ rotate: [0, 15, -5, 15, -5, 10, 0, 0] }}
-                                transition={{
-                                    repeat: Infinity,
-                                    repeatType: 'reverse',
-                                    duration: 2,
-                                }}
-                            >
-                                👋
-                            </motion.span>{' '}
-                            Contact Me
-                        </Button>
-                    </Link>
-                    <Link href='/inprogress'>
-                        <Button width='100%' variant='secondary'>
-                            Projects &rarr;
-                        </Button>
-                    </Link>
-                </Grid>
-            </Container>
-        </Container>
-    </Container>
-);
+	@media screen and (max-width: 768px) {
+		font-size: 48px;
+	}
+
+	@media screen and (max-width: 425px) {
+		font-size: 40px;
+	}
+
+	@media screen and (max-width: 320px) {
+		font-size: 24px;
+	}
+`;
+
+const Subheading = styled.h3`
+	font-size: 32px;
+	margin: 0;
+	color: ${({ theme }) => theme.text};
+
+	@media screen and (max-width: 768px) {
+		font-size: 24px;
+	}
+
+	@media screen and (max-width: 320px) {
+		font-size: 16px;
+	}
+`;
+
+const Image = styled.img`
+	border-radius: 20%;
+	max-width: 100%;
+	height: auto;
+
+	@media screen and (max-width: 425px) {
+		width: 120px;
+		height: 120px;
+	}
+
+	@media screen and (max-width: 320px) {
+		width: 100px;
+		height: 100px;
+	}
+`;
 
 export default Home;

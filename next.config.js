@@ -1,17 +1,36 @@
 module.exports = {
-    target: 'serverless',
-    reactStrictMode: false,
+	poweredByHeader: false,
+	assetPrefix: process.env.ASSET_HOST || '',
+	productionBrowserSourceMaps: process.env.NODE_ENV === 'production',
+	webpack(config) {
+		config.module.rules.push({
+			test: /\.svg?$/,
+			oneOf: [
+				{
+					use: [
+						{
+							loader: '@svgr/webpack',
+							options: {
+								prettier: false,
+								svgo: true,
+								svgoConfig: {
+									plugins: [{ removeViewBox: false }],
+								},
+								titleProp: true,
+							},
+						},
+					],
+					issuer: {
+						and: [/\.(ts|tsx|js|jsx|md|mdx)$/],
+					},
+				},
+			],
+		});
 
-    webpack: (config, { isServer }) => {
-        if (!isServer) {
-            config.resolve.fallback.fs = false;
-        }
-
-        config.module.rules.push({
-            test: /\.md$/,
-            use: 'raw-loader',
-        });
-
-        return config;
-    },
+		return config;
+	},
+	publicRuntimeConfig: {},
+	images: {
+		domains: ['user-images.githubusercontent.com'],
+	},
 };
