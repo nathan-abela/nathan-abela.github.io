@@ -1,7 +1,17 @@
+// next.config.js
+
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
+
+let assetPrefix = './';
+
+if (isGithubActions) {
+	const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '');
+
+	assetPrefix = `/${repo}/`;
+}
+
 module.exports = {
-	distDir: 'out',
-	poweredByHeader: false,
-	productionBrowserSourceMaps: false,
+	assetPrefix: assetPrefix,
 	webpack(config) {
 		config.module.rules.push({
 			test: /\.svg?$/,
@@ -28,9 +38,5 @@ module.exports = {
 		});
 
 		return config;
-	},
-	publicRuntimeConfig: {},
-	images: {
-		domains: ['user-images.githubusercontent.com'],
 	},
 };

@@ -2,8 +2,7 @@ name: Build and Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - master
+    branches: [master]
   workflow_dispatch: {}
 
 jobs:
@@ -25,8 +24,14 @@ jobs:
       - name: Build Project 🏗️
         run: npm run build
 
+      - name: Export Static HTML ⚡
+        run: npm run export
+
+      - name: Disable Jekyll Build 🔨
+        run: touch ./out/.nojekyll
+
       - name: Deploy 🚀
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@4.4.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
+          branch: gh-pages
+          folder: out
