@@ -1,5 +1,5 @@
 module.exports = {
-	distDir: 'out',
+	distDir: 'public',
 	poweredByHeader: false,
 	productionBrowserSourceMaps: false,
 	webpack(config) {
