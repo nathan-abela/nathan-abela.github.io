@@ -2,43 +2,11 @@ import styled from 'styled-components';
 
 import { SeoHead } from 'Atoms/SeoHead';
 
-function Error({ statusCode }: { statusCode: number }) {
-	let errorMessage = '';
-
-	switch (statusCode) {
-		case 400:
-			errorMessage = 'Bad Request';
-			break;
-		case 401:
-			errorMessage = 'Unauthorised';
-			break;
-		case 403:
-			errorMessage = 'Forbidden';
-			break;
-		case 404:
-			errorMessage = 'Page Not Found';
-			break;
-		case 405:
-			errorMessage = 'Method Not Allowed';
-			break;
-		case 500:
-			errorMessage = 'Internal Server Error';
-			break;
-		case 502:
-			errorMessage = 'Bad Gateway';
-			break;
-		case 503:
-			errorMessage = 'Service Unavailable';
-			break;
-		default:
-			errorMessage = 'Internal Server Error';
-			break;
-	}
-
+function Error() {
 	return (
 		<>
 			<SeoHead
-				title={`${statusCode} ${errorMessage} - Nathan Abela - Portfolio`}
+				title={`404 - Page Not Found - Nathan Abela - Portfolio`}
 				description="Error Page"
 				meta={[
 					{
@@ -49,17 +17,12 @@ function Error({ statusCode }: { statusCode: number }) {
 			/>
 
 			<Container>
-				<h1>{statusCode}</h1>
-				<Description>{errorMessage}.</Description>
+				<h1>404</h1>
+				<Description>Page Not Found.</Description>
 			</Container>
 		</>
 	);
 }
-
-Error.getInitialProps = ({ res, err }: any) => {
-	const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
-	return { statusCode };
-};
 
 const Container = styled.div`
 	display: flex;
@@ -79,3 +42,44 @@ const Description = styled.div`
 `;
 
 export default Error;
+
+// Code below is to handle error pages dynamically
+// The below approach is not being used because GitHub Pages serves the application as a static bundle
+
+// function Error({ statusCode }: { statusCode: number }) {
+// let errorMessage = '';
+
+// switch (statusCode) {
+// 	case 400:
+// 		errorMessage = 'Bad Request';
+// 		break;
+// 	case 401:
+// 		errorMessage = 'Unauthorised';
+// 		break;
+// 	case 403:
+// 		errorMessage = 'Forbidden';
+// 		break;
+// 	case 404:
+// 		errorMessage = 'Page Not Found';
+// 		break;
+// 	case 405:
+// 		errorMessage = 'Method Not Allowed';
+// 		break;
+// 	case 500:
+// 		errorMessage = 'Internal Server Error';
+// 		break;
+// 	case 502:
+// 		errorMessage = 'Bad Gateway';
+// 		break;
+// 	case 503:
+// 		errorMessage = 'Service Unavailable';
+// 		break;
+// 	default:
+// 		errorMessage = 'Internal Server Error';
+// 		break;
+// }
+
+// Error.getInitialProps = ({ res, err }: any) => {
+// 	const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
+// 	return { statusCode };
+// };
