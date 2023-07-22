@@ -32,6 +32,12 @@
         "./src/components/templates/*"
       ],
       // Other folders
+      "@Types": [
+        "./@types/"
+      ],
+      "@Types/*": [
+        "./@types/*"
+      ],
       "Styles/*": [
         "./src/styles/*"
       ],
@@ -43,6 +49,9 @@
       ],
       "Redux/*": [
         "./src/redux/*"
+      ],
+      "Utils/*": [
+        "./src/utils/*"
       ]
     },
     "isolatedModules": true,
