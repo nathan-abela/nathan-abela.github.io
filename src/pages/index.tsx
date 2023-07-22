@@ -31,10 +31,10 @@ function Home() {
 					</div>
 				</div>
 				<p style={{ lineHeight: 1.8 }}>
-					I am passionate software engineer from Malta, currently pursuing a Bachelor of Science in Software
-					Development. Specialised in frontend development using Angular, StencilJS, and NextJS, and have successfully
-					developed mobile apps, built web applications, and designed RESTful APIs. My strong suite of skills includes
-					effective communication, problem-solving, and collaboration. Explore my portfolio for a glimpse of my{' '}
+					I am a passionate software engineer from Malta, currently pursuing a Bachelor of Science in Software
+					Development. I specialise in frontend development using Angular, StencilJS, and NextJS, where I have
+					demonstrated proficiency in developing mobile apps, building web applications, and designing RESTful APIs.
+					With a strong focus on effective communication, problem-solving, and collaborative teamwork. Explore my{' '}
 					{/* eslint-disable-next-line prettier/prettier */}
 					<a
 						href="/portfolio"
@@ -42,12 +42,12 @@ function Home() {
 						target="_self"
 						rel="noopener noreferrer"
 					>
-						projects
-					</a>
-					.
+						portfolio
+					</a>{' '}
+					for a glimpse of my projects.
 				</p>
 
-				<Button href="/projects">Projects</Button>
+				<Button href="/portfolio">Portfolio</Button>
 			</Container>
 		</>
 	);
