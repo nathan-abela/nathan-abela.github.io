@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const StyledButton = styled.button`
 	display: inline-block;
 	margin: 32px 16px 0;
-	border: 2px solid ${({ theme }) => theme.primary};
+	border: 2px solid transparent;
 	color: ${({ theme }) => theme.text};
 	padding: 8px 48px;
 	border-radius: 4px;
@@ -13,7 +13,7 @@ const StyledButton = styled.button`
 const StyledLink = styled.a<{ transparent?: boolean }>`
 	display: inline-block;
 	margin: 32px 16px 0 0;
-	border: 2px solid ${({ theme }) => theme.primary};
+	border: 2px solid transparent;
 	color: ${({ theme, transparent }) => (transparent ? theme.text : theme.body)};
 	padding: 8px 48px;
 	border-radius: 4px;
@@ -22,8 +22,7 @@ const StyledLink = styled.a<{ transparent?: boolean }>`
 	font-weight: 600;
 
 	&:hover {
-		border: 2px solid ${({ theme }) => theme.primary};
-		color: ${({ theme }) => theme.headline};
+		background: ${({ theme }) => `${theme.primary}F2`};
 	}
 `;
 
