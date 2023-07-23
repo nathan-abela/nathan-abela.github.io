@@ -17,7 +17,7 @@ function Education() {
 
 	useEffect(() => {
 		const getEducation = async () => {
-			const data = await fetcher('/api/education');
+			const data = await fetcher('/education');
 			setEducation(data.education);
 		};
 
