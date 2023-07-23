@@ -1,7 +1,5 @@
-import absoluteUrl from 'next-absolute-url';
-import { GetServerSideProps } from 'next';
 import styled from 'styled-components';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { fetcher } from 'Utils/fetcher';
 import { IEducation } from '@Types/education';
@@ -14,7 +12,18 @@ interface IProps {
 	education: IEducation[];
 }
 
-function Education({ education }: IProps) {
+function Education() {
+	const [education, setEducation] = useState<IProps['education']>([]);
+
+	useEffect(() => {
+		const getEducation = async () => {
+			const data = await fetcher('/api/education');
+			setEducation(data.education);
+		};
+
+		getEducation();
+	}, []);
+
 	const [loadedEducation, setLoadedEducation] = useState(2);
 
 	const loadMore = () => {
@@ -45,17 +54,6 @@ function Education({ education }: IProps) {
 		</>
 	);
 }
-
-export const getServerSideProps: GetServerSideProps = async ({ req }) => {
-	const { origin } = absoluteUrl(req);
-	const { education } = await fetcher(`${origin}/api/education`);
-
-	return {
-		props: {
-			education,
-		},
-	};
-};
 
 const ContentWrapper = styled.div`
 	display: flex;
