@@ -1,7 +1,8 @@
+import { GetStaticProps } from 'next';
 import styled from 'styled-components';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
-import { fetcher } from 'Utils/fetcher';
+import educationData from './data/education.json';
 import { IEducation } from '@Types/education';
 
 import { Container } from 'Atoms/Container';
@@ -12,18 +13,7 @@ interface IProps {
 	education: IEducation[];
 }
 
-function Education() {
-	const [education, setEducation] = useState<IProps['education']>([]);
-
-	useEffect(() => {
-		const getEducation = async () => {
-			const data = await fetcher('/education');
-			setEducation(data.education);
-		};
-
-		getEducation();
-	}, []);
-
+function Education({ education }: IProps) {
 	const [loadedEducation, setLoadedEducation] = useState(2);
 
 	const loadMore = () => {
@@ -54,6 +44,16 @@ function Education() {
 		</>
 	);
 }
+
+export const getStaticProps: GetStaticProps<IProps> = async () => {
+	const education = educationData.education;
+
+	return {
+		props: {
+			education,
+		},
+	};
+};
 
 const ContentWrapper = styled.div`
 	display: flex;
@@ -107,3 +107,26 @@ const MobileCenter = styled.div`
 `;
 
 export default Education;
+
+/*
+
+Code below can be used to handle education data via API
+The below approach is not being used because GitHub Pages only serves static files and
+does not support server-side code execution or API routes.
+
+If a serverless platform like Vercel or Netlify is used to deploy, then the below approach works:
+
+export const getServerSideProps: GetServerSideProps = async ({ req }) => {
+	const { origin } = absoluteUrl(req);
+	const { education } = await fetcher(`${origin}/api/education`);
+
+	return {
+		props: {
+			education,
+		},
+	};
+};
+
+In addition, src\utils\fetcher.ts should be used along with src\pages\api\education.ts.
+
+*/
