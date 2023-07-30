@@ -4,7 +4,7 @@ const StyledTechnologyIcons = styled.div`
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		gap: 1rem;
+		gap: 16px;
 
 		@media screen and (max-width: 768px) {
 			font-size: 32px;
@@ -43,34 +43,36 @@ const StyledTechnologyIcons = styled.div`
 	.icon a {
 		color: ${({ theme }) => theme.headline};
 	}
-
-	// .tooltip {
-	// 	position: relative;
-	// 	display: inline-block;
-	// }
-
-	// .tooltip-text {
-	// 	visibility: hidden;
-	// 	width: 120px;
-	// 	background-color: ${({ theme }) => theme.text};
-	// 	color: ${({ theme }) => theme.body};
-	// 	text-align: center;
-	// 	padding: 4px 0;
-	// 	border-radius: 6px;
-
-	// 	// Tooltip Position
-	// 	position: absolute;
-	// 	top: -100%;
-	// 	left: 50%;
-	// 	transform: translateX(-50%);
-	// 	opacity: 0;
-	// 	transition: opacity 0.35s ease-in-out;
-	// }
-
-	// .icon:hover .tooltip-text {
-	// 	visibility: visible;
-	// 	opacity: 1;
-	// }
 `;
 
 export { StyledTechnologyIcons };
+
+// Tooltip
+
+// .tooltip {
+// 	position: relative;
+// 	display: inline-block;
+// }
+
+// .tooltip-text {
+// 	visibility: hidden;
+// 	width: 120px;
+// 	background-color: ${({ theme }) => theme.text};
+// 	color: ${({ theme }) => theme.body};
+// 	text-align: center;
+// 	padding: 4px 0;
+// 	border-radius: 6px;
+
+// 	// Tooltip Position
+// 	position: absolute;
+// 	top: -100%;
+// 	left: 50%;
+// 	transform: translateX(-50%);
+// 	opacity: 0;
+// 	transition: opacity 0.35s ease-in-out;
+// }
+
+// .icon:hover .tooltip-text {
+// 	visibility: visible;
+// 	opacity: 1;
+// }
