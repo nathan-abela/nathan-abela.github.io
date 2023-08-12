@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Button } from 'Atoms/Buttons';
+import { Button } from 'Atoms/Button';
 import { Container } from 'Atoms/Container';
 import { SeoHead } from 'Atoms/SeoHead';
 
