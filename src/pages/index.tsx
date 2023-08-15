@@ -32,9 +32,7 @@ function Home() {
 				</div>
 				<p style={{ lineHeight: 1.8 }}>
 					I am a passionate software engineer from Malta, currently pursuing a Bachelor of Science in Software
-					Development. I specialise in frontend development using Angular, StencilJS, and NextJS, where I have
-					demonstrated proficiency in developing mobile apps, building web applications, and designing RESTful APIs.
-					With a strong focus on effective communication, problem-solving, and collaborative teamwork. Explore my{' '}
+					Development. I specialise in frontend development using Angular, StencilJS, and NextJS. My{' '}
 					{/* eslint-disable-next-line prettier/prettier */}
 					<a
 						href="/portfolio"
@@ -44,7 +42,8 @@ function Home() {
 					>
 						portfolio
 					</a>{' '}
-					for a glimpse of my projects.
+					highlights a range of successful projects, both for academic purposes and personal initiatives. I possess a
+					strong focus on effective communication, problem-solving, and collaborative teamwork.
 				</p>
 
 				<Button href="/portfolio">Portfolio</Button>
