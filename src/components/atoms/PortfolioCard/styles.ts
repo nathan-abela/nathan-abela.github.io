@@ -9,6 +9,10 @@ const StyledPortfolioCard = styled.article`
 		text-decoration: none;
 	}
 
+	img {
+		border-radius: 4px;
+	}
+
 	h1 {
 		margin: 0;
 	}
