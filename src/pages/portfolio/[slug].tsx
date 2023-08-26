@@ -35,7 +35,7 @@ export default function PortfolioPost({ item, mdxSource }: any) {
 
 			<Container>
 				<Image
-					src={`/portfolio/${slug}.jpg`}
+					src={`${slug}.jpg`}
 					width={1920}
 					height={1080}
 					objectFit="cover"
