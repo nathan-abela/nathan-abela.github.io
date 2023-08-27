@@ -86,10 +86,10 @@ function Portfolio({ portfolioItems }: any) {
 					</FilterButton>
 
 					<FilterButton
-						onClick={() => setSelectedType('Design and Media Tools')}
-						isActive={selectedType.toLowerCase() === 'design and media tools'}
+						onClick={() => setSelectedType('Design and Media')}
+						isActive={selectedType.toLowerCase() === 'design and media'}
 					>
-						Design and Media Tools
+						Design and Media
 					</FilterButton>
 
 					{/* eslint-disable-next-line prettier/prettier */}
