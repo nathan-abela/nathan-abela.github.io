@@ -24,7 +24,7 @@ function About() {
 					<Center>
 						<p style={{ lineHeight: 1.8 }}>
 							I am a {differenceInYears(new Date(), new Date('1999-12-25'))}-year-old frontend developer from Malta,
-							specialising in JavaScript and Typescript, with a keen focus on the Angular, StencilJS, and NextJS
+							specialising in JavaScript and Typescript, with a keen focus on the Angular, Stencil.js, and Next.js
 							frameworks. I am focused on creating high-quality software products with clean user interfaces in mind,
 							which you can find on my {/* eslint-disable-next-line prettier/prettier */}
 							<a
