@@ -1,10 +1,22 @@
+import { GetStaticProps } from 'next';
 import styled from 'styled-components';
 
 import { Button } from 'Atoms/Button';
 import { Container } from 'Atoms/Container';
 import { SeoHead } from 'Atoms/SeoHead';
 
-function Home() {
+import { IEducation } from '@Types/education';
+import { IJob } from '@Types/job';
+
+import educationData from './data/education.json';
+import jobsData from './data/jobs.json';
+
+interface IProps {
+	education: IEducation[];
+	jobs: IJob[];
+}
+
+function Home({ education, jobs }: IProps) {
 	return (
 		<>
 			{/* eslint-disable-next-line prettier/prettier */}
@@ -31,8 +43,18 @@ function Home() {
 					</div>
 				</div>
 				<p style={{ lineHeight: 1.8 }}>
-					I am a passionate software engineer from Malta, currently pursuing a Bachelor of Science in Software
-					Development. I specialise in frontend development using Angular, StencilJS, and NextJS. My{' '}
+					I am a passionate software engineer from Malta, currently pursuing a {education[0].course} while also working
+					as a {jobs[0].jobTitle} at {''}
+					{/* eslint-disable-next-line prettier/prettier */}
+					<a
+						href={jobs[0].website}
+						title={jobs[0].company}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{jobs[0].company}
+					</a>
+					. I specialise in frontend development using Angular, Stencil.js, and Next.js. My {''}
 					{/* eslint-disable-next-line prettier/prettier */}
 					<a
 						href="/portfolio"
@@ -51,6 +73,18 @@ function Home() {
 		</>
 	);
 }
+
+export const getStaticProps: GetStaticProps<IProps> = async () => {
+	const jobs = jobsData.jobs;
+	const education = educationData.education;
+
+	return {
+		props: {
+			jobs,
+			education,
+		},
+	};
+};
 
 const Headline = styled.h2`
 	font-size: 56px;
@@ -90,12 +124,10 @@ const Image = styled.img`
 
 	@media screen and (max-width: 425px) {
 		width: 120px;
-		height: 120px;
 	}
 
 	@media screen and (max-width: 320px) {
 		width: 100px;
-		height: 100px;
 	}
 `;
 
