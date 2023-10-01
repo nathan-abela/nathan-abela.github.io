@@ -5,6 +5,7 @@
 
 # Testing
 /coverage
+src/test/tests-report/
 
 # Next.js
 /.next/
