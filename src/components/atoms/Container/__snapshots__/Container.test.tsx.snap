@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container renders container correctly 1`] = `
+<div>
+  <div
+    class="styles__StyledContainer-sc-a6yh8x-0 earCTD"
+  >
+    Page Content
+  </div>
+</div>
+`;
+
+exports[`Container renders correctly 1`] = `
+<div>
+  <div
+    class="styles__StyledContainer-sc-a6yh8x-0 earCTD"
+  >
+    Page Content
+  </div>
+</div>
+`;
