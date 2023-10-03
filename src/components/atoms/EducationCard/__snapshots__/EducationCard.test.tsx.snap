@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Education Card renders education card correctly 1`] = `
+<div>
+  <div
+    class="styles__StyledEducation-sc-1mmyy45-0 kEasSY"
+  >
+    <div
+      class="styles__Flex-sc-1mmyy45-1 cFtOTd"
+    >
+      <div>
+        <strong>
+          <a
+            href="https://mcast.edu.mt"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Bachelor of Science (Honours) in Software Development
+          </a>
+        </strong>
+      </div>
+      <div>
+        2021
+         - 
+        2024
+      </div>
+    </div>
+    <strong>
+      <p>
+        Malta College for Arts, Science and Technology (MCAST)
+         | 
+        Paola, Malta
+      </p>
+    </strong>
+    <p>
+      Focuses on creating software applications using formal design patterns, and solving complex real-world problems using formal methodologies. Includes units such as secure software development, server-side and client-side scripting, discrete mathematics, and other similar modules.
+    </p>
+    <small>
+      <i>
+        <strong>
+          Technologies:
+        </strong>
+         
+        JavaScript, Angular, Bootstrap, Java, Selenium, RESTful API, C#, ASP.NET Core, Android Studio, Firebase, Amazon Web Services, Algorithms, Data Structures, OWASP ZAP, C, Python, Tensorflow, LaTeX, SQL, SQL Data Modeller, SQL Server Management Studio, Power BI, CakePHP, PHP, XAMPP
+      </i>
+    </small>
+  </div>
+</div>
+`;
