@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter Button renders correctly when isActive is true 1`] = `
+<div>
+  <button
+    class="styles__StyledFilterButton-sc-nr6hfb-0 hPZrEs"
+  >
+    Filter
+  </button>
+</div>
+`;
+
+exports[`Filter Button renders filter button with isActive is false 1`] = `
+<div>
+  <button
+    class="styles__StyledFilterButton-sc-nr6hfb-0 hPZrEs"
+  >
+    Filter button text
+  </button>
+</div>
+`;
+
+exports[`Filter Button renders filter button with isActive is true 1`] = `
+<div>
+  <button
+    class="styles__StyledFilterButton-sc-nr6hfb-0 hPZrEs"
+  >
+    Filter button text
+  </button>
+</div>
+`;
