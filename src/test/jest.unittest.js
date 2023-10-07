@@ -9,8 +9,8 @@ module.exports = {
 	modulePathIgnorePatterns: ['<rootDir>/cypress/e2e'],
 	moduleNameMapper: {
 		'\\.(jpg|jpeg|png|gif|ico|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
-			'<rootDir>/__mocks__/fileMock.js',
-		'\\.(css|less|sass)$': '<rootDir>/__mocks__/styleMock.js',
+			'<rootDir>/test/__mocks__/fileMock.js',
+		'\\.(css|less|sass)$': '<rootDir>/test/__mocks__/styleMock.js',
 		// Components
 		'^Atoms(.*)$': '<rootDir>/src/components/atoms$1',
 		'^Molecules(.*)$': '<rootDir>/src/components/molecules$1',
