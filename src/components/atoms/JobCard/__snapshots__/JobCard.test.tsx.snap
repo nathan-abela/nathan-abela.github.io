@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Job Card renders job card correctly 1`] = `
+<div>
+  <div
+    class="styles__StyledJobCard-sc-1msshzv-0 kONyWZ"
+  >
+    <div
+      class="styles__Flex-sc-1msshzv-1 hUDaJt"
+    >
+      <div>
+        <strong>
+          Software Engineer
+        </strong>
+         -
+         
+        <a
+          href="https://wikipedia.org/wiki/Acme_Corporation"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Acme Corporation
+        </a>
+      </div>
+      <div>
+        January 2020
+         -
+         
+        January 2022
+      </div>
+    </div>
+    <small>
+      <em>
+        Valletta, Malta
+      </em>
+    </small>
+    <p>
+      Worked on a variety of software projects.
+    </p>
+    <ul
+      style="padding-left: 16px;"
+    >
+      <li>
+         • 
+        Developed and maintained web applications using Angular.
+         
+      </li>
+      <li>
+         • 
+        Collaborated with cross-functional teams to deliver high-quality software.
+         
+      </li>
+      <li>
+         • 
+        Participated in code reviews and provided constructive feedback.
+         
+      </li>
+    </ul>
+    <small>
+      <em>
+        <strong>
+          Technologies:
+        </strong>
+         
+        JavaScript, TypeScript, Node.js, Angular, HTML, CSS
+      </em>
+    </small>
+  </div>
+</div>
+`;
