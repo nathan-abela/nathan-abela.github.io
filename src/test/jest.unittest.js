@@ -12,15 +12,15 @@ module.exports = {
 			'<rootDir>/test/__mocks__/fileMock.js',
 		'\\.(css|less|sass)$': '<rootDir>/test/__mocks__/styleMock.js',
 		// Components
-		'^Atoms(.*)$': '<rootDir>/src/components/atoms$1',
-		'^Molecules(.*)$': '<rootDir>/src/components/molecules$1',
-		'^Organisms(.*)$': '<rootDir>/src/components/organisms$1',
-		'^Templates(.*)$': '<rootDir>/src/components/templates$1',
+		'^Atoms(.*)$': '<rootDir>/components/atoms$1',
+		'^Molecules(.*)$': '<rootDir>/components/molecules$1',
+		'^Organisms(.*)$': '<rootDir>/components/organisms$1',
+		'^Templates(.*)$': '<rootDir>/components/templates$1',
 		// Other folders
 		'^@Types(.*)$': '<rootDir>/@types$1',
 		'^Public(.*)$': '<rootDir>/public$1',
-		'^Pages(.*)$': '<rootDir>/src/pages$1',
-		'^Redux(.*)$': '<rootDir>/src/redux$1',
-		'^Utils(.*)$': '<rootDir>/src/utils$1',
+		'^Pages(.*)$': '<rootDir>/pages$1',
+		'^Redux(.*)$': '<rootDir>/redux$1',
+		'^Utils(.*)$': '<rootDir>/utils$1',
 	},
 };
