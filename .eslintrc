@@ -38,7 +38,11 @@
 		"prettier/prettier": [
 			"error",
 			{
-				"endOfLine": "auto"
+				"endOfLine": "auto",
+				"printWidth": 100,
+				"singleQuote": true,
+				"tabWidth": 4,
+				"useTabs": true
 			}
 		]
 	}
