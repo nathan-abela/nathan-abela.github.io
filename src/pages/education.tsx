@@ -22,7 +22,6 @@ function Education({ education }: IProps) {
 
 	return (
 		<>
-			{/* eslint-disable-next-line prettier/prettier */}
 			<SeoHead
 				title="Nathan Abela - Portfolio"
 				description="Software Engineer with focus on Angular and Stencil.js."
@@ -38,7 +37,11 @@ function Education({ education }: IProps) {
 						<EducationCard education={education} key={education.course + i} />
 					))}
 
-					<Center>{loadedEducation < education.length && <button onClick={loadMore}>Load more</button>}</Center>
+					<Center>
+						{loadedEducation < education.length && (
+							<button onClick={loadMore}>Load more</button>
+						)}
+					</Center>
 				</MobileCenter>
 			</Container>
 		</>

@@ -15,6 +15,7 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
 			technologies: [
 				// Frontend Development
 				'JavaScript',
+				'TypeScript',
 				'Angular',
 				'Bootstrap',
 
@@ -48,6 +49,7 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
 
 				// Document Preparation
 				'LaTeX',
+				'Jupyter Notebook',
 
 				// Database
 				'SQL',
@@ -139,7 +141,10 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
 			startDate: '2016',
 			endDate: '2019',
 			description: '',
-			bullets: ['A Levels - Computing, Pure Maths', 'Intermediates - Physics, Marketing, English, System Of Knowledge'],
+			bullets: [
+				'A Levels - Computing, Pure Maths',
+				'Intermediates - Physics, Marketing, English, System Of Knowledge',
+			],
 			technologies: [],
 		},
 		{

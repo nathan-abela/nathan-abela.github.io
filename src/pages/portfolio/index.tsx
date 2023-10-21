@@ -15,11 +15,12 @@ function Portfolio({ portfolioItems }: any) {
 	const filteredItems =
 		selectedType === 'all'
 			? portfolioItems
-			: portfolioItems.filter((item: any) => item.type.toLowerCase().includes(selectedType.toLowerCase()));
+			: portfolioItems.filter((item: any) =>
+					item.type.toLowerCase().includes(selectedType.toLowerCase())
+			  );
 
 	return (
 		<>
-			{/* eslint-disable-next-line prettier/prettier */}
 			<SeoHead
 				title="Nathan Abela - Portfolio"
 				description="Software Engineer with focus on Angular and Stencil.js."
@@ -27,7 +28,9 @@ function Portfolio({ portfolioItems }: any) {
 
 			<Container>
 				<h1 style={{ fontSize: '24px' }}>Portfolio Under Construction 🏗️</h1>
-				<p style={{ fontSize: '16px' }}>There are more projects to list, which will be added soon!</p>
+				<p style={{ fontSize: '16px' }}>
+					There are more projects to list, which will be added soon!
+				</p>
 
 				<br></br>
 				<hr></hr>
@@ -35,7 +38,6 @@ function Portfolio({ portfolioItems }: any) {
 				<Headline>Portfolio</Headline>
 
 				<div style={{ paddingBottom: 32 }}>
-					{/* eslint-disable-next-line prettier/prettier */}
 					<FilterButton
 						onClick={() => setSelectedType('all')}
 						isActive={selectedType === 'all'}
@@ -92,7 +94,6 @@ function Portfolio({ portfolioItems }: any) {
 						Design and Media
 					</FilterButton>
 
-					{/* eslint-disable-next-line prettier/prettier */}
 					<FilterButton
 						onClick={() => setSelectedType('Other')}
 						isActive={selectedType.toLowerCase() === 'other'}
@@ -109,7 +110,9 @@ function Portfolio({ portfolioItems }: any) {
 				{selectedType.toLowerCase() !== 'all' && filteredItems.length === 0 && (
 					<>
 						<h1 style={{ fontSize: '24px' }}>Category Under Construction 🏗️</h1>
-						<p style={{ fontSize: '16px' }}>Projects under this category will be available soon!</p>
+						<p style={{ fontSize: '16px' }}>
+							Projects under this category will be available soon!
+						</p>
 					</>
 				)}
 			</Container>
@@ -118,7 +121,13 @@ function Portfolio({ portfolioItems }: any) {
 }
 
 export async function getStaticProps() {
-	const portfolioItems = getAllDocuments('PORTFOLIO', ['title', 'slug', 'type', 'technologies', 'sortOrder']);
+	const portfolioItems = getAllDocuments('PORTFOLIO', [
+		'title',
+		'slug',
+		'type',
+		'technologies',
+		'sortOrder',
+	]);
 
 	const sortedItems = orderBy(portfolioItems, ['sortOrder'], ['asc']);
 

@@ -19,7 +19,6 @@ interface IProps {
 function Home({ education, jobs }: IProps) {
 	return (
 		<>
-			{/* eslint-disable-next-line prettier/prettier */}
 			<SeoHead
 				title="Nathan Abela - Portfolio"
 				description="Software Engineer with focus on Angular and Stencil.js."
@@ -33,7 +32,6 @@ function Home({ education, jobs }: IProps) {
 					</div>
 
 					<div style={{ marginTop: 32, marginBottom: 32 }}>
-						{/* eslint-disable-next-line prettier/prettier */}
 						<Image
 							src="/profilePicture.jpg"
 							alt="Nathan Abela profile picture"
@@ -43,9 +41,8 @@ function Home({ education, jobs }: IProps) {
 					</div>
 				</div>
 				<p style={{ lineHeight: 1.8 }}>
-					I am a passionate software engineer from Malta, currently pursuing a {education[0].course} while also working
-					as a {jobs[0].jobTitle} at {''}
-					{/* eslint-disable-next-line prettier/prettier */}
+					I am a passionate software engineer from Malta, currently pursuing a{' '}
+					{education[0].course} while also working as a {jobs[0].jobTitle} at{' '}
 					<a
 						href={jobs[0].website}
 						title={jobs[0].company}
@@ -54,8 +51,8 @@ function Home({ education, jobs }: IProps) {
 					>
 						{jobs[0].company}
 					</a>
-					. I specialise in frontend development using Angular, Stencil.js, and Next.js. My {''}
-					{/* eslint-disable-next-line prettier/prettier */}
+					. I specialise in frontend development using Angular, Stencil.js, and Next.js.
+					My{' '}
 					<a
 						href="/portfolio"
 						title="Portfolio page"
@@ -64,8 +61,9 @@ function Home({ education, jobs }: IProps) {
 					>
 						portfolio
 					</a>{' '}
-					highlights a range of successful projects, both for academic purposes and personal initiatives. I possess a
-					strong focus on effective communication, problem-solving, and collaborative teamwork.
+					highlights a range of successful projects, both for academic purposes and
+					personal initiatives. I possess a strong focus on effective communication,
+					problem-solving, and collaborative teamwork.
 				</p>
 
 				<Button href="/portfolio">Portfolio</Button>

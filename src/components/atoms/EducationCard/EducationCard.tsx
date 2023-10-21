@@ -30,7 +30,8 @@ const EducationCard: FC<EducationProps> = ({ education }) => {
 				</div>
 
 				<div>
-					{format(new Date(education.startDate), 'yyyy')} - {format(new Date(education.endDate), 'yyyy')}
+					{format(new Date(education.startDate), 'yyyy')} -{' '}
+					{format(new Date(education.endDate), 'yyyy')}
 				</div>
 			</Flex>
 

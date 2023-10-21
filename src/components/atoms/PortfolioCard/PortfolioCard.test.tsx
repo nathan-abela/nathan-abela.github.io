@@ -12,7 +12,8 @@ describe('Portfolio Card', () => {
 					link: 'https://example.com',
 					type: 'Web Development',
 					technologies: ['HTML', 'CSS', 'JavaScript'],
-					content: 'This is a sample project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+					content:
+						'This is a sample project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 				}}
 			></PortfolioCard>
 		);

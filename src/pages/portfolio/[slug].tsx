@@ -27,7 +27,6 @@ export default function PortfolioPost({ item, mdxSource }: any) {
 
 	return (
 		<>
-			{/* eslint-disable-next-line prettier/prettier */}
 			<SeoHead
 				title="Nathan Abela - Portfolio"
 				description={`Project ${title} developed by Nathan Abela`}
@@ -64,7 +63,14 @@ export default function PortfolioPost({ item, mdxSource }: any) {
 }
 
 export async function getStaticProps({ params }: any) {
-	const item = getBySlug('PORTFOLIO', params.slug, ['title', 'slug', 'link', 'type', 'technologies', 'content']);
+	const item = getBySlug('PORTFOLIO', params.slug, [
+		'title',
+		'slug',
+		'link',
+		'type',
+		'technologies',
+		'content',
+	]);
 
 	if (!item?.content) return {};
 

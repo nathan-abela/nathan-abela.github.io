@@ -15,7 +15,6 @@ interface IProps {
 function Work({ jobs }: IProps) {
 	return (
 		<>
-			{/* eslint-disable-next-line prettier/prettier */}
 			<SeoHead
 				title="Nathan Abela - Portfolio"
 				description="Software Engineer with focus on Angular and Stencil.js."

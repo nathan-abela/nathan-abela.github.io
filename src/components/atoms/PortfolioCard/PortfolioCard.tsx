@@ -33,7 +33,8 @@ const PortfolioCard: FC<PortfolioProps> = ({ item }) => {
 						<h1>{item.title}</h1>
 						<p>{item.type}</p>
 						<p>
-							<strong>Technologies used:</strong> <em>{item.technologies.join(', ')}</em>
+							<strong>Technologies used:</strong>{' '}
+							<em>{item.technologies.join(', ')}</em>
 						</p>
 					</a>
 				</Link>

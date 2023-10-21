@@ -31,7 +31,9 @@ const SeoHead: FC<HeadProps> = ({
 			<meta name="og:description" content={description} />
 			<meta name="og:type" content="website" />
 			<meta name="og:url" content="https://nathan-abela.github.io/" />
-			{meta && meta.length > 0 && meta.map(({ name, content }) => <meta name={name} content={content} key={name} />)}
+			{meta &&
+				meta.length > 0 &&
+				meta.map(({ name, content }) => <meta name={name} content={content} key={name} />)}
 			{image && <meta name="og:image" content={image} />}
 			{keywords && <meta name="keywords" content={keywords} />}
 			<script
