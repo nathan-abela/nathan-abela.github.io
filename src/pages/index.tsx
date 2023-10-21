@@ -22,14 +22,14 @@ function Home({ education, jobs }: IProps) {
 			{/* eslint-disable-next-line prettier/prettier */}
 			<SeoHead
 				title="Nathan Abela - Portfolio"
-				description="Frontend Engineer with focus on Angular and Stencil.js."
+				description="Software Engineer with focus on Angular and Stencil.js."
 			/>
 
 			<Container>
 				<div style={{ display: 'flex', alignItems: 'center' }}>
 					<div style={{ flex: 1 }}>
 						<Headline>Nathan Abela</Headline>
-						<Subheading>Frontend Engineer</Subheading>
+						<Subheading>Software Engineer</Subheading>
 					</div>
 
 					<div style={{ marginTop: 32, marginBottom: 32 }}>

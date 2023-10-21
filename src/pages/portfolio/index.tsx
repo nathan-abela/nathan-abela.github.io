@@ -22,7 +22,7 @@ function Portfolio({ portfolioItems }: any) {
 			{/* eslint-disable-next-line prettier/prettier */}
 			<SeoHead
 				title="Nathan Abela - Portfolio"
-				description="Frontend Engineer with focus on Angular and Stencil.js."
+				description="Software Engineer with focus on Angular and Stencil.js."
 			/>
 
 			<Container>
