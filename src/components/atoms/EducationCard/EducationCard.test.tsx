@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import { EducationCard } from './EducationCard';
 
 describe('Education Card', () => {
-	it('renders education card correctly', () => {
+	it('renders correctly', () => {
 		const { container } = render(
 			<EducationCard
 				education={{

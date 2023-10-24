@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import { JobCard } from './JobCard';
 
 describe('Job Card', () => {
-	it('renders job card correctly', () => {
+	it('renders correctly', () => {
 		const { container } = render(
 			<JobCard
 				job={{

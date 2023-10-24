@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import { PortfolioCard } from './PortfolioCard';
 
 describe('Portfolio Card', () => {
-	it('renders portfolio card correctly', () => {
+	it('renders correctly', () => {
 		const { container } = render(
 			<PortfolioCard
 				item={{

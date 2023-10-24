@@ -10,7 +10,7 @@ jest.mock('react-redux', () => ({
 }));
 
 describe('ThemeToggle', () => {
-	it('renders theme toggle correctly', () => {
+	it('renders correctly', () => {
 		const { container } = render(
 			// eslint-disable-next-line prettier/prettier
 			<ThemeToggle />

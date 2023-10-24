@@ -10,7 +10,7 @@ jest.mock('react-redux', () => ({
 }));
 
 describe('Mobile Navigation', () => {
-	it('renders mobile navigation correctly', () => {
+	it('renders correctly', () => {
 		const { container } = render(
 			// eslint-disable-next-line prettier/prettier
 			<MobileNavigation />
