@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Job Card renders job card correctly 1`] = `
+exports[`Job Card renders correctly 1`] = `
 <div>
   <div
     class="styles__StyledJobCard-sc-1msshzv-0 kONyWZ"

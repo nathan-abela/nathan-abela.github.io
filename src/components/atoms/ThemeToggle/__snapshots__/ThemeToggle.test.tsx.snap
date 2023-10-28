@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ThemeToggle renders theme toggle correctly 1`] = `
+exports[`ThemeToggle renders correctly 1`] = `
 <div>
   <button
     class="styles__StyledThemeToggle-sc-1b7mai8-0 kHwexB"

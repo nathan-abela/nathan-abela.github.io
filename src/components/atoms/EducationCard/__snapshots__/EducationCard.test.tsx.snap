@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Education Card renders education card correctly 1`] = `
+exports[`Education Card renders correctly 1`] = `
 <div>
   <div
     class="styles__StyledEducation-sc-1mmyy45-0 kEasSY"
@@ -21,7 +21,8 @@ exports[`Education Card renders education card correctly 1`] = `
       </div>
       <div>
         2021
-         - 
+         -
+         
         2024
       </div>
     </div>

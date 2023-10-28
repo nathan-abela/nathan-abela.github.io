@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Portfolio Card renders portfolio card correctly 1`] = `
+exports[`Portfolio Card renders correctly 1`] = `
 <div>
   <article
     class="styles__StyledPortfolioCard-sc-1xdr3bq-0 dlrVCc"

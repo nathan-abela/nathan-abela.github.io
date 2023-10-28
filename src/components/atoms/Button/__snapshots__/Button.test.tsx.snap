@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button renders button correctly 1`] = `
+exports[`Button renders correctly 1`] = `
 <div>
   <button
     class="styles__StyledButton-sc-1tgmejn-0 iFnVFy"
@@ -10,7 +10,7 @@ exports[`Button renders button correctly 1`] = `
 </div>
 `;
 
-exports[`Button renders button with link correctly 1`] = `
+exports[`Button renders with link correctly 1`] = `
 <div>
   <a
     class="styles__StyledLink-sc-1tgmejn-1 dogzke"

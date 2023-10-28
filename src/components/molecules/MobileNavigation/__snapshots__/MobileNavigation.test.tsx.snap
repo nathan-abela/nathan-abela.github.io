@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Mobile Navigation renders mobile navigation correctly 1`] = `
+exports[`Mobile Navigation renders correctly 1`] = `
 <div>
   <ul
     class="styles__StyledMobileNavigation-sc-1619527-0 huyxbx"
