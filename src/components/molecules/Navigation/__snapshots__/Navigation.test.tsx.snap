@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation renders correctly 1`] = `
+<div>
+  <nav
+    class="styles__StyledNavigation-sc-1f4kyre-0"
+  >
+    <ul
+      class="styles__List-sc-1f4kyre-1 ivSflr"
+    >
+      <li>
+        <a
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="/about"
+        >
+          About
+        </a>
+      </li>
+      <li>
+        <a
+          href="/education"
+        >
+          Education
+        </a>
+      </li>
+      <li>
+        <a
+          href="/work"
+        >
+          Work
+        </a>
+      </li>
+      <li>
+        <a
+          href="/portfolio"
+        >
+          Portfolio
+        </a>
+      </li>
+      <li
+        class="desktop-only"
+      >
+        <button
+          class="styles__StyledThemeToggle-sc-1b7mai8-0 kHwexB"
+          title="Switch to light theme"
+        >
+          <test-file-stub />
+        </button>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
