@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Social Icons renders correctly 1`] = `
+<div>
+  <ul
+    class="styles__StyledSocialIcons-sc-1vfff3-0 fBtYTT"
+  >
+    <li>
+      <a
+        href="https://github.com/nathan-abela"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="Github"
+      >
+        <test-file-stub />
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.linkedin.com/in/nathan-abela"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="LinkedIn"
+      >
+        <test-file-stub />
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.youtube.com/@nathanabela"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="YouTube"
+      >
+        <test-file-stub />
+      </a>
+    </li>
+    <li>
+      <a
+        href="mailto:nathanabela7@gmail.com"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="Email"
+      >
+        <test-file-stub />
+      </a>
+    </li>
+  </ul>
+</div>
+`;
