@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Technology Icons renders correctly 1`] = `
+<div>
+  <div
+    class="styles__StyledTechnologyIcons-sc-x4mqdq-0 ecLLGN"
+  >
+    <div
+      class="grid"
+    >
+      <div
+        class="card"
+      >
+        <div
+          class="icon tooltip"
+        >
+          <a
+            href="https://www.javascript.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="JavaScript"
+          >
+            <test-file-stub />
+          </a>
+        </div>
+      </div>
+      <div
+        class="card"
+      >
+        <div
+          class="icon"
+        >
+          <a
+            href="https://www.typescriptlang.org"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="TypeScript"
+          >
+            <test-file-stub />
+          </a>
+        </div>
+      </div>
+      <div
+        class="card"
+      >
+        <div
+          class="icon"
+        >
+          <a
+            href="https://angular.io"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Angular"
+          >
+            <test-file-stub />
+          </a>
+        </div>
+      </div>
+      <div
+        class="card"
+      >
+        <div
+          class="icon"
+        >
+          <a
+            href="https://stenciljs.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="StencilJS"
+          >
+            <test-file-stub />
+          </a>
+        </div>
+      </div>
+      <div
+        class="card"
+      >
+        <div
+          class="icon"
+        >
+          <a
+            href="https://nextjs.org"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="NextJS"
+          >
+            <test-file-stub />
+          </a>
+        </div>
+      </div>
+      <div
+        class="card"
+      >
+        <div
+          class="icon"
+        >
+          <a
+            href="https://storybook.js.org"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Storybook"
+          >
+            <test-file-stub />
+          </a>
+        </div>
+      </div>
+      <div
+        class="card"
+      >
+        <div
+          class="icon"
+        >
+          <a
+            href="https://www.python.org"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Python"
+          >
+            <test-file-stub />
+          </a>
+        </div>
+      </div>
+      <div
+        class="card"
+      >
+        <div
+          class="icon"
+        >
+          <a
+            href="https://docs.microsoft.com/dotnet/csharp"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Csharp"
+          >
+            <test-file-stub />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
