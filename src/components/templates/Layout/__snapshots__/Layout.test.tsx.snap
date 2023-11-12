@@ -1,0 +1,228 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout renders correctly 1`] = `
+<div>
+  <div
+    class="styles__StyledLayout-sc-10u3re6-0 gmhIHB"
+  >
+    <header>
+      <div
+        class="styles__StyledContainer-sc-a6yh8x-0 earCTD"
+      >
+        <div
+          class="styles__Flex-sc-1w2me4-0 bHDEaA"
+        >
+          <h1>
+            <a
+              href="/"
+            >
+              Nathan Abela
+            </a>
+          </h1>
+          <div
+            class="styles__Desktop-sc-1w2me4-1 kRNKOm"
+          >
+            <nav
+              class="styles__StyledNavigation-sc-1f4kyre-0"
+            >
+              <ul
+                class="styles__List-sc-1f4kyre-1 ivSflr"
+              >
+                <li>
+                  <a
+                    href="/"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/about"
+                  >
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/education"
+                  >
+                    Education
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/work"
+                  >
+                    Work
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/portfolio"
+                  >
+                    Portfolio
+                  </a>
+                </li>
+                <li
+                  class="desktop-only"
+                >
+                  <button
+                    class="styles__StyledThemeToggle-sc-1b7mai8-0 kHwexB"
+                    title="Switch to light theme"
+                  >
+                    <test-file-stub />
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div
+            class="styles__Mobile-sc-1w2me4-2 kpxcyD"
+          >
+            <ul
+              class="styles__StyledMobileNavigation-sc-1619527-0 huyxbx"
+            >
+              <li>
+                <button
+                  class="styles__StyledThemeToggle-sc-1b7mai8-0 kHwexB"
+                  title="Switch to light theme"
+                >
+                  <test-file-stub />
+                </button>
+              </li>
+              <li>
+                <button
+                  class="styles__Menu-sc-1619527-1 hKtafq"
+                >
+                  <test-file-stub />
+                </button>
+              </li>
+            </ul>
+            <div
+              class="styles__Overlay-sc-1619527-2 lnRURg"
+            >
+              <nav
+                class="styles__StyledNavigation-sc-1f4kyre-0"
+              >
+                <ul
+                  class="styles__List-sc-1f4kyre-1 ivSflr"
+                >
+                  <li>
+                    <a
+                      href="/"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/about"
+                    >
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/education"
+                    >
+                      Education
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/work"
+                    >
+                      Work
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/portfolio"
+                    >
+                      Portfolio
+                    </a>
+                  </li>
+                  <li
+                    class="desktop-only"
+                  >
+                    <button
+                      class="styles__StyledThemeToggle-sc-1b7mai8-0 kHwexB"
+                      title="Switch to light theme"
+                    >
+                      <test-file-stub />
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      Test Content
+    </main>
+    <footer
+      class="styles__StyledFooter-sc-1pzkd2j-0 bbUQND"
+    >
+      <div
+        class="styles__StyledContainer-sc-a6yh8x-0 earCTD"
+      >
+        <div
+          class="styles__Flex-sc-1pzkd2j-1 dfBZPt"
+        >
+          <span>
+            © 
+            2023
+             Nathan Abela
+          </span>
+          <ul
+            class="styles__StyledSocialIcons-sc-1vfff3-0 fBtYTT"
+          >
+            <li>
+              <a
+                href="https://github.com/nathan-abela"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Github"
+              >
+                <test-file-stub />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/nathan-abela"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="LinkedIn"
+              >
+                <test-file-stub />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/@nathanabela"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="YouTube"
+              >
+                <test-file-stub />
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:nathanabela7@gmail.com"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Email"
+              >
+                <test-file-stub />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+`;
