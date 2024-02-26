@@ -19,6 +19,9 @@
 				"JavaScript",
 				"TypeScript",
 				"Angular",
+				"Angular Material",
+				"RxJS",
+				"NgRx",
 				"Stencil.js",
 				"Storybook",
 				"HTML",
@@ -33,7 +36,7 @@
 				"JIRA",
 				"Confluence",
 				"Git",
-				"Agile Methodology"
+				"Scrum Methodology"
 			]
 		},
 		{
@@ -50,7 +53,15 @@
 				"Conducting thorough testing and debugging to ensure the reliability and performance of backend services",
 				"Collaborating with frontend developers to ensure seamless communication between the frontend and backend"
 			],
-			"technologies": ["Node.js", "RESTful APIs", "Express.js", "MongoDB", "MySQL", "Git", "Agile Methodology"]
+			"technologies": [
+				"Node.js",
+				"RESTful APIs",
+				"Express.js",
+				"MongoDB",
+				"MySQL",
+				"Git",
+				"Agile Methodology"
+			]
 		},
 		{
 			"company": "Loqus Business Intelligence",
@@ -66,7 +77,13 @@
 				"Contributing to team discussions and brainstorming sessions",
 				"Performing testing and debugging to ensure app functionality and stability"
 			],
-			"technologies": ["Android Studio", "React Native", "Realm Database", "Git", "Agile Methodology"]
+			"technologies": [
+				"Android Studio",
+				"React Native",
+				"Realm Database",
+				"Git",
+				"Agile Methodology"
+			]
 		},
 		{
 			"company": "Loqus Business Intelligence",
