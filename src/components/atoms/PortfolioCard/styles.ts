@@ -9,8 +9,16 @@ const StyledPortfolioCard = styled.article`
 		text-decoration: none;
 	}
 
-	img {
+	span {
 		border-radius: 4px;
+	}
+
+	img {
+		transition: transform 0.3s ease;
+	}
+
+	img:hover {
+		transform: scale(1.04);
 	}
 
 	h1 {
