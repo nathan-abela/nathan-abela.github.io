@@ -4,8 +4,12 @@ const StyledPortfolioCard = styled.article`
 	margin-bottom: 48px;
 	flex-direction: column;
 
+	&:hover img {
+		transform: scale(1.04);
+	}
+
 	a {
-		color: ${({ theme }) => theme.headline} !important;
+		color: ${({ theme }) => theme.headline};
 		text-decoration: none;
 	}
 
@@ -15,10 +19,6 @@ const StyledPortfolioCard = styled.article`
 
 	img {
 		transition: transform 0.3s ease;
-	}
-
-	img:hover {
-		transform: scale(1.04);
 	}
 
 	h1 {
