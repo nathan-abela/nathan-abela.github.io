@@ -45,3 +45,6 @@ out/
 *.iml
 *.ipr
 *.iws
+
+# Other
+/src/pages/api
