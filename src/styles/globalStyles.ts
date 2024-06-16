@@ -10,7 +10,7 @@ export const GlobalStyles = createGlobalStyle`
 		margin: 0;
 		background: ${({ theme }) => theme.body};
 		color: ${({ theme }) => theme.text};
-    	transition: all 0.3s ease;
+		transition: all 0.3s ease;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -239,15 +239,15 @@ export const GlobalStyles = createGlobalStyle`
 	#nprogress .peg {
 		display: block;
 		position: absolute;
-		right: 0px;
+		right: 0;
 		width: 100px;
 		height: 100%;
 		box-shadow: 0 0 10px ${({ theme }) => theme.primary}, 0 0 5px ${({ theme }) => theme.primary};
 		opacity: 1.0;
 
-		-webkit-transform: rotate(3deg) translate(0px, -4px);
-				-ms-transform: rotate(3deg) translate(0px, -4px);
-						transform: rotate(3deg) translate(0px, -4px);
+		-webkit-transform: rotate(3deg) translate(0, -4px);
+				-ms-transform: rotate(3deg) translate(0, -4px);
+						transform: rotate(3deg) translate(0, -4px);
 	}
 
 	/* Remove these to get rid of the spinner */
