@@ -25,6 +25,7 @@
 				"Firebase",
 
 				"Amazon Web Services",
+				"Google Cloud",
 
 				"Algorithms",
 				"Data Structures",
@@ -33,19 +34,28 @@
 
 				"C",
 				"Python",
-				"Tensorflow",
 				"R",
 
 				"RStudio",
+
+				"TensorFlow",
+				"Keras",
 				"Roboflow",
 				"YOLOv8",
+				"NumPy",
+				"Pandas",
+				"OpenCV",
+
+				"Docker",
+				"Postman",
+				"Redis",
 
 				"LaTeX",
 
 				"SQL",
 				"SQL Data Modeller",
 				"SQL Server Management Studio",
-
+				"MongoDB",
 				"Power BI",
 
 				"CakePHP",
