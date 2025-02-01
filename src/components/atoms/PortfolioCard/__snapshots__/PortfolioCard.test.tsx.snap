@@ -3,7 +3,7 @@
 exports[`Portfolio Card renders correctly 1`] = `
 <div>
   <article
-    class="styles__StyledPortfolioCard-sc-1xdr3bq-0 dlrVCc"
+    class="styles__StyledPortfolioCard-sc-1xdr3bq-0 fiMmoz"
   >
     <a
       href="/portfolio/sample-project"
