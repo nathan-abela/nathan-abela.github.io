@@ -15,6 +15,7 @@ import Angular from 'Public/assets/angular.svg';
 import Csharp from 'Public/assets/csharp.svg';
 import Javascript from 'Public/assets/javascript.svg';
 import Nextjs from 'Public/assets/nextjs.svg';
+import Playwright from 'Public/assets/Playwright.svg';
 import Python from 'Public/assets/python.svg';
 import Stenciljs from 'Public/assets/stenciljs.svg';
 import Storybook from 'Public/assets/storybook.svg';
@@ -34,6 +35,7 @@ export interface IconProps {
 		| 'STENCILJS'
 		| 'NEXTJS'
 		| 'STORYBOOK'
+		| 'PLAYWRIGHT'
 		| 'PYTHON'
 		| 'CSHARP';
 }
@@ -79,6 +81,9 @@ const Icon: FC<IconProps> = ({ icon }) => {
 			break;
 		case 'STORYBOOK':
 			Icon = Storybook;
+			break;
+		case 'PLAYWRIGHT':
+			Icon = Playwright;
 			break;
 		case 'PYTHON':
 			Icon = Python;

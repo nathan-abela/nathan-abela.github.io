@@ -127,10 +127,10 @@ exports[`Technology Icons renders correctly 1`] = `
           class="icon"
         >
           <a
-            href="https://docs.microsoft.com/dotnet/csharp"
+            href="https://playwright.dev"
             rel="noopener noreferrer"
             target="_blank"
-            title="Csharp"
+            title="Playwright"
           >
             <test-file-stub />
           </a>
