@@ -15,7 +15,7 @@ import Angular from 'Public/assets/angular.svg';
 import Csharp from 'Public/assets/csharp.svg';
 import Javascript from 'Public/assets/javascript.svg';
 import Nextjs from 'Public/assets/nextjs.svg';
-import Playwright from 'Public/assets/Playwright.svg';
+import Playwright from 'Public/assets/playwright.svg';
 import Python from 'Public/assets/python.svg';
 import Stenciljs from 'Public/assets/stenciljs.svg';
 import Storybook from 'Public/assets/storybook.svg';
