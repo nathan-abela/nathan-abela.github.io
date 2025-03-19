@@ -1,34 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nathan Abela Portfolio
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-black?style=flat&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-blue?style=flat&logo=typescript&logoColor=white)
+![Styled Components](https://img.shields.io/badge/Styled--Components-DB7093.svg?style=flat&logo=styledcomponents&logoColor=white)
+![MDX](https://img.shields.io/badge/MDX-black?style=flat&logo=mdx&labelColor=black)
 
-First, run the development server:
+![Last Commit](https://img.shields.io/github/last-commit/nathan-abela/nathan-abela.github.io)
+[![Build and Deploy](https://github.com/nathan-abela/nathan-abela.github.io/actions/workflows/deploy_workflow.yaml/badge.svg)](https://github.com/nathan-abela/nathan-abela.github.io/actions/workflows/deploy_workflow.yaml)
+![GitHub Stars](https://img.shields.io/github/stars/nathan-abela/nathan-abela.github.io)
+
+This is my personal website portfolio! Built using **Next.js**, **TypeScript**, and **Styled Components**, it showcases my projects, skills, and experiences.
+
+<!-- Insert Image of homepage -->
+
+## Features
+
+- Next.js for server-side rendering and static site generation.
+- TypeScript for type-safe JavaScript.
+- Styled Components for writing CSS in JS.
+- Responsive design, ensuring the website looks great on all devices.
+- SEO optimised with meta tags and Open Graph tags.
+- Dynamic content loading with MDX.
+
+### Live Demo
+
+For a quick preview, check out the [Live Demo](https://nathan-abela.github.io).
+
+## Running the Application
+
+To run the application locally, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/nathan-abela/nathan-abela.github.io.git
+   ```
+
+2. Install the dependencies:
+
+   ```bash
+   cd nathan-abela.github.io
+   npm install
+   ```
+
+3. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:3000`.
+
+## Running Tests
+
+To run tests, use the following command:
 
 ```bash
-npm run dev
-# or
-yarn dev
+npm run test
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To update snapshots, use the following command:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+npm test -- -u
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Technologies Used
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Next.js](https://nextjs.org)
+- [TypeScript](https://www.typescriptlang.org)
+- [Styled Components](https://styled-components.com)
+- [MDX](https://mdxjs.com)
