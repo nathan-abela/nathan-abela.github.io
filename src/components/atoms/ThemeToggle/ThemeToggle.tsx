@@ -11,19 +11,18 @@ const ThemeToggle = () => {
 	const theme = useSelector(getTheme);
 	const dispatch = useDispatch();
 
-	const lightTheme = theme === 'light';
+	const isLightTheme = theme === 'light';
 
 	const handleToggle = () => {
-		dispatch(setTheme(lightTheme ? 'dark' : 'light'));
+		dispatch(setTheme(isLightTheme ? 'dark' : 'light'));
 	};
 
 	return (
-		// eslint-disable-next-line prettier/prettier
 		<StyledThemeToggle
 			onClick={handleToggle}
-			title={`Switch to ${lightTheme ? 'dark' : 'light'} theme`}
+			title={`Switch to ${isLightTheme ? 'dark' : 'light'} theme`}
 		>
-			{lightTheme ? <Dark /> : <Light />}
+			{isLightTheme ? <Dark /> : <Light />}
 		</StyledThemeToggle>
 	);
 };

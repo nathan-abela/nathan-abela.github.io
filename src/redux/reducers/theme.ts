@@ -4,7 +4,7 @@ import { HYDRATE } from 'next-redux-wrapper';
 import { SET_THEME } from '../actionTypes';
 
 export const initialState: IThemeState = {
-	currentTheme: 'light',
+	currentTheme: 'dark',
 };
 
 export type IThemeState = {
