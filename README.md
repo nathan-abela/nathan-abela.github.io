@@ -13,6 +13,10 @@ This is my personal website portfolio! Built using **Next.js**, **TypeScript**, 
 
 <!-- Insert Image of homepage -->
 
+### Live Demo
+
+For a quick preview, check out the [Live Demo](https://nathan-abela.github.io).
+
 ## Features
 
 - Next.js for server-side rendering and static site generation.
@@ -22,11 +26,9 @@ This is my personal website portfolio! Built using **Next.js**, **TypeScript**, 
 - SEO optimised with meta tags and Open Graph tags.
 - Dynamic content loading with MDX.
 
-### Live Demo
+## Getting Started
 
-For a quick preview, check out the [Live Demo](https://nathan-abela.github.io).
-
-## Running the Application
+### Running the Application
 
 To run the application locally, follow these steps:
 
@@ -51,7 +53,7 @@ To run the application locally, follow these steps:
 
 4. Open your browser and navigate to `http://localhost:3000`.
 
-## Running Tests
+### Running Tests
 
 To run tests, use the following command:
 
