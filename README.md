@@ -1,9 +1,9 @@
 # Nathan Abela Portfolio
 
-![Next.js](https://img.shields.io/badge/Next.js-black?style=flat&logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-blue?style=flat&logo=typescript&logoColor=white)
-![Styled Components](https://img.shields.io/badge/Styled--Components-DB7093.svg?style=flat&logo=styledcomponents&logoColor=white)
-![MDX](https://img.shields.io/badge/MDX-black?style=flat&logo=mdx&labelColor=black)
+[![Next.js](https://img.shields.io/badge/Next.js-black?style=flat&logo=next.js)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-blue?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Styled Components](https://img.shields.io/badge/Styled--Components-DB7093.svg?style=flat&logo=styledcomponents&logoColor=white)](https://styled-components.com)
+[![MDX](https://img.shields.io/badge/MDX-black?style=flat&logo=mdx&labelColor=black)](https://mdxjs.com)
 
 ![Last Commit](https://img.shields.io/github/last-commit/nathan-abela/nathan-abela.github.io)
 [![Build and Deploy](https://github.com/nathan-abela/nathan-abela.github.io/actions/workflows/deploy_workflow.yaml/badge.svg)](https://github.com/nathan-abela/nathan-abela.github.io/actions/workflows/deploy_workflow.yaml)
