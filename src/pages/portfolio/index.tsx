@@ -28,14 +28,6 @@ function Portfolio({ portfolioItems }: any) {
 			/>
 
 			<Container>
-				<h1 style={{ fontSize: '24px' }}>Portfolio Under Construction 🏗️</h1>
-				<p style={{ fontSize: '16px' }}>
-					There are more projects to list, which will be added soon!
-				</p>
-
-				<br></br>
-				<hr></hr>
-
 				<Headline>Portfolio</Headline>
 
 				<div style={{ paddingBottom: 32 }}>
@@ -107,14 +99,8 @@ function Portfolio({ portfolioItems }: any) {
 					<PortfolioCard item={item} key={item.slug} />
 				))}
 
-				{/* If no projects are found within a category */}
 				{selectedType.toLowerCase() !== 'all' && filteredItems.length === 0 && (
-					<>
-						<h1 style={{ fontSize: '24px' }}>Category Under Construction 🏗️</h1>
-						<p style={{ fontSize: '16px' }}>
-							Projects under this category will be available soon!
-						</p>
-					</>
+					<p style={{ fontSize: '16px' }}>No projects in this category yet.</p>
 				)}
 			</Container>
 		</>
