@@ -25,9 +25,9 @@ function About() {
 						<p style={{ lineHeight: 1.8 }}>
 							I am a {differenceInYears(new Date(), new Date('1999-12-25'))}
 							-year-old software engineer from Malta, specialising in JavaScript and
-							Typescript, with a keen focus on Angular, Stencil.js, and Next.js. I am
-							focused on creating high-quality software products with clean user
-							interfaces in mind, which you can find on my{' '}
+							TypeScript, with a keen focus on Stencil.js and Next.js. I am focused on
+							creating high-quality software products with clean user interfaces in
+							mind, which you can find on my{' '}
 							<a
 								href="/portfolio"
 								title="Portfolio page"

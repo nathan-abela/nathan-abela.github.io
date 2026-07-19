@@ -52,8 +52,8 @@ function Home({ education, jobs }: IProps) {
 					>
 						{jobs[0].company}
 					</a>
-					. I specialise in frontend development using Angular, Stencil.js, and Next.js.
-					My{' '}
+					, where I specialise in frontend development with TypeScript and Stencil.js.
+					Outside work I build and ship side projects with Next.js. My{' '}
 					<a
 						href="/portfolio"
 						title="Portfolio page"
@@ -62,9 +62,9 @@ function Home({ education, jobs }: IProps) {
 					>
 						portfolio
 					</a>{' '}
-					highlights a range of successful projects, both for academic purposes and
-					personal initiatives. I have a strong focus on effective communication,
-					problem-solving, and collaborative teamwork.
+					highlights a range of projects, from shipped side products to academic work. I
+					have a strong focus on effective communication, problem-solving, and
+					collaborative teamwork.
 				</p>
 
 				<Button href="/portfolio">Portfolio</Button>
