@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { Button } from 'Atoms/Button';
 import { Container } from 'Atoms/Container';
 import { SeoHead } from 'Atoms/SeoHead';
+import { siteConfig } from 'Config/site';
 
 import { IEducation } from '@Types/education';
 import { IJob } from '@Types/job';
@@ -20,16 +21,16 @@ function Home({ education, jobs }: IProps) {
 	return (
 		<>
 			<SeoHead
-				title="Nathan Abela - Software Engineer"
-				description="Software Engineer from Malta building web applications with TypeScript, Stencil.js, and Next.js."
+				title={`${siteConfig.name} - ${siteConfig.jobTitle}`}
+				description={siteConfig.description}
 				path="/"
 			/>
 
 			<Container>
 				<div style={{ display: 'flex', alignItems: 'center' }}>
 					<div style={{ flex: 1 }}>
-						<Headline>Nathan Abela</Headline>
-						<Subheading>Software Engineer</Subheading>
+						<Headline>{siteConfig.name}</Headline>
+						<Subheading>{siteConfig.jobTitle}</Subheading>
 					</div>
 
 					<div style={{ marginTop: 32, marginBottom: 32 }}>

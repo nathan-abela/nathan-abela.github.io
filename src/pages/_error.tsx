@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 import { SeoHead } from 'Atoms/SeoHead';
+import { siteConfig } from 'Config/site';
 
 function Error() {
 	return (
 		<>
 			<SeoHead
-				title={`404 - Page Not Found - Nathan Abela - Portfolio`}
+				title={`404 - Page Not Found - ${siteConfig.name}`}
 				description="Error Page"
 				meta={[
 					{

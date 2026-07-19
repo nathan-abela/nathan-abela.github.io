@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { StyledSocialIcons } from './styles';
 
 import { Icon } from 'Atoms/Icon';
+import { siteConfig } from 'Config/site';
 
 const SocialIcons: FC = () => {
 	return (
@@ -9,7 +10,7 @@ const SocialIcons: FC = () => {
 			<li>
 				{/* eslint-disable-next-line prettier/prettier */}
 				<a
-					href="https://github.com/nathan-abela"
+					href={siteConfig.links.github}
 					target="_blank"
 					rel="noopener noreferrer"
 					title="Github"
@@ -20,7 +21,7 @@ const SocialIcons: FC = () => {
 			<li>
 				{/* eslint-disable-next-line prettier/prettier */}
 				<a
-					href="https://www.linkedin.com/in/nathan-abela"
+					href={siteConfig.links.linkedin}
 					target="_blank"
 					rel="noopener noreferrer"
 					title="LinkedIn"
@@ -31,7 +32,7 @@ const SocialIcons: FC = () => {
 			<li>
 				{/* eslint-disable-next-line prettier/prettier */}
 				<a
-					href="https://www.youtube.com/@nathanabela"
+					href={siteConfig.links.youtube}
 					target="_blank"
 					rel="noopener noreferrer"
 					title="YouTube"
@@ -42,7 +43,7 @@ const SocialIcons: FC = () => {
 			<li>
 				{/* eslint-disable-next-line prettier/prettier */}
 				<a
-					href="mailto:nathanabela7@gmail.com"
+					href={`mailto:${siteConfig.links.email}`}
 					target="_blank"
 					rel="noopener noreferrer"
 					title="Email"

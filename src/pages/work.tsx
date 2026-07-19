@@ -7,6 +7,7 @@ import jobsData from './data/jobs.json';
 import { Container } from 'Atoms/Container';
 import { JobCard } from 'Atoms/JobCard';
 import { SeoHead } from 'Atoms/SeoHead';
+import { siteConfig } from 'Config/site';
 
 interface IProps {
 	jobs: IJob[];
@@ -16,8 +17,8 @@ function Work({ jobs }: IProps) {
 	return (
 		<>
 			<SeoHead
-				title="Experience - Nathan Abela"
-				description="Nathan Abela's professional experience, from QA engineering to frontend development."
+				title={`Experience - ${siteConfig.name}`}
+				description={`${siteConfig.name}'s professional experience, from QA engineering to frontend development.`}
 				path="/work"
 			/>
 

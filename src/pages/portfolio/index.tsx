@@ -6,6 +6,7 @@ import { Container } from 'Atoms/Container';
 import { FilterButton } from 'Atoms/FilterButton';
 import { PortfolioCard } from 'Atoms/PortfolioCard';
 import { SeoHead } from 'Atoms/SeoHead';
+import { siteConfig } from 'Config/site';
 
 import { getAllDocuments } from 'Utils/api';
 
@@ -22,8 +23,8 @@ function Portfolio({ portfolioItems }: any) {
 	return (
 		<>
 			<SeoHead
-				title="Portfolio - Nathan Abela"
-				description="Selected projects by Nathan Abela: web apps, mobile apps, and machine learning experiments."
+				title={`Portfolio - ${siteConfig.name}`}
+				description={`Selected projects by ${siteConfig.name}: web apps, mobile apps, and machine learning experiments.`}
 				path="/portfolio"
 			/>
 

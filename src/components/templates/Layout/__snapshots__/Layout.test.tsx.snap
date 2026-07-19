@@ -174,7 +174,9 @@ exports[`Layout renders correctly 1`] = `
           <span>
             © 
             2026
-             Nathan Abela
+             
+            Nathan Abela
+             
           </span>
           <ul
             class="styles__StyledSocialIcons-sc-1vfff3-0 fBtYTT"

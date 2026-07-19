@@ -3,13 +3,14 @@ import styled from 'styled-components';
 
 import { Container } from 'Atoms/Container';
 import { SeoHead } from 'Atoms/SeoHead';
+import { siteConfig } from 'Config/site';
 import { TechnologyIcons } from 'Molecules/TechnologyIcons';
 
 function About() {
 	return (
 		<>
 			<SeoHead
-				title="About - Nathan Abela"
+				title={`About - ${siteConfig.name}`}
 				description="A software engineer from Malta specialising in TypeScript, Stencil.js, and Next.js."
 				path="/about"
 			/>

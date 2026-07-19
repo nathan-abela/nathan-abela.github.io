@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { Button } from 'Atoms/Button';
 import { Container } from 'Atoms/Container';
 import { SeoHead } from 'Atoms/SeoHead';
+import { siteConfig } from 'Config/site';
 
 import { shimmer } from 'Utils/shimmer';
 import { getAllDocuments, getBySlug } from 'Utils/api';
@@ -28,8 +29,8 @@ export default function PortfolioPost({ item, mdxSource }: any) {
 	return (
 		<>
 			<SeoHead
-				title={`${title} - Nathan Abela`}
-				description={`${title}, a project by Nathan Abela.`}
+				title={`${title} - ${siteConfig.name}`}
+				description={`${title}, a project by ${siteConfig.name}.`}
 				path={`/portfolio/${slug}`}
 			/>
 

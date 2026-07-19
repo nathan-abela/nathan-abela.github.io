@@ -8,6 +8,7 @@ import { IEducation } from '@Types/education';
 import { Container } from 'Atoms/Container';
 import { EducationCard } from 'Atoms/EducationCard';
 import { SeoHead } from 'Atoms/SeoHead';
+import { siteConfig } from 'Config/site';
 
 interface IProps {
 	education: IEducation[];
@@ -23,8 +24,8 @@ function Education({ education }: IProps) {
 	return (
 		<>
 			<SeoHead
-				title="Education - Nathan Abela"
-				description="Nathan Abela's academic background, courses, and certifications."
+				title={`Education - ${siteConfig.name}`}
+				description={`${siteConfig.name}'s academic background, courses, and certifications.`}
 				path="/education"
 			/>
 
