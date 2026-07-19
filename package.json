@@ -10,7 +10,8 @@
 		"export": "next export",
 		"lint": "next lint",
 		"test": "jest --selectProjects test",
-		"test:watch": "jest --selectProjects test --watch "
+		"test:watch": "jest --selectProjects test --watch",
+		"clean": "rimraf .next && rimraf node_modules"
 	},
 	"dependencies": {
 		"@svgr/webpack": "^5.5.0",
