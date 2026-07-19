@@ -22,8 +22,9 @@ function Portfolio({ portfolioItems }: any) {
 	return (
 		<>
 			<SeoHead
-				title="Nathan Abela - Portfolio"
-				description="Software Engineer with focus on Angular and Stencil.js."
+				title="Portfolio - Nathan Abela"
+				description="Selected projects by Nathan Abela: web apps, mobile apps, and machine learning experiments."
+				path="/portfolio"
 			/>
 
 			<Container>

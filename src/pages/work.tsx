@@ -16,8 +16,9 @@ function Work({ jobs }: IProps) {
 	return (
 		<>
 			<SeoHead
-				title="Nathan Abela - Portfolio"
-				description="Software Engineer with focus on Angular and Stencil.js."
+				title="Experience - Nathan Abela"
+				description="Nathan Abela's professional experience, from QA engineering to frontend development."
+				path="/work"
 			/>
 
 			<Container>

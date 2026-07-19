@@ -28,8 +28,9 @@ export default function PortfolioPost({ item, mdxSource }: any) {
 	return (
 		<>
 			<SeoHead
-				title="Nathan Abela - Portfolio"
-				description={`Project ${title} developed by Nathan Abela`}
+				title={`${title} - Nathan Abela`}
+				description={`${title}, a project by Nathan Abela.`}
+				path={`/portfolio/${slug}`}
 			/>
 
 			<Container>

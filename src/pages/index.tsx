@@ -20,8 +20,9 @@ function Home({ education, jobs }: IProps) {
 	return (
 		<>
 			<SeoHead
-				title="Nathan Abela - Portfolio"
-				description="Software Engineer with focus on Angular and Stencil.js."
+				title="Nathan Abela - Software Engineer"
+				description="Software Engineer from Malta building web applications with TypeScript, Stencil.js, and Next.js."
+				path="/"
 			/>
 
 			<Container>

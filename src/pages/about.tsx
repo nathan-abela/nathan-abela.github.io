@@ -9,8 +9,9 @@ function About() {
 	return (
 		<>
 			<SeoHead
-				title="Nathan Abela - Portfolio"
-				description="Software Engineer with focus on Angular and Stencil.js."
+				title="About - Nathan Abela"
+				description="A software engineer from Malta specialising in TypeScript, Stencil.js, and Next.js."
+				path="/about"
 			/>
 
 			<Container>

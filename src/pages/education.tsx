@@ -23,8 +23,9 @@ function Education({ education }: IProps) {
 	return (
 		<>
 			<SeoHead
-				title="Nathan Abela - Portfolio"
-				description="Software Engineer with focus on Angular and Stencil.js."
+				title="Education - Nathan Abela"
+				description="Nathan Abela's academic background, courses, and certifications."
+				path="/education"
 			/>
 
 			<Container>
