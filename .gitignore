@@ -46,5 +46,8 @@ out/
 *.ipr
 *.iws
 
+# Generated
+public/sitemap.xml
+
 # Other
 /src/pages/api
