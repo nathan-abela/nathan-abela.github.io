@@ -32,7 +32,7 @@ export default class StyledDocument extends Document {
 
 	render(): React.ReactElement {
 		return (
-			<Html>
+			<Html lang="en">
 				<Head />
 				<body>
 					<Main />

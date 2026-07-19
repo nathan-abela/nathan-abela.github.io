@@ -1,10 +1,12 @@
 import { FC } from 'react';
 import Head from 'next/head';
 
+const SITE_URL = 'https://nathan-abela.github.io';
+
 export interface HeadProps {
 	title: string;
 	description: string;
-	lang?: string;
+	path?: string;
 	keywords?: string;
 	author?: string;
 	image?: string;
@@ -17,29 +19,33 @@ export interface HeadProps {
 const SeoHead: FC<HeadProps> = ({
 	title,
 	description,
+	path = '/',
 	author = 'Nathan Abela',
 	keywords,
-	image = 'https://i.imgur.com/RBCwr3v.png',
+	image = `${SITE_URL}/og.png`,
 	meta,
 }) => {
+	const url = `${SITE_URL}${path}`;
+
 	return (
 		<Head>
 			<title>{title}</title>
 			<meta name="description" content={description} />
 			<meta name="author" content={author} />
-			<meta name="og:title" content={title} />
-			<meta name="og:description" content={description} />
-			<meta name="og:type" content="website" />
-			<meta name="og:url" content="https://nathan-abela.github.io/" />
+			<link rel="canonical" href={url} />
+			<meta property="og:title" content={title} />
+			<meta property="og:description" content={description} />
+			<meta property="og:type" content="website" />
+			<meta property="og:url" content={url} />
 			{meta &&
 				meta.length > 0 &&
 				meta.map(({ name, content }) => <meta name={name} content={content} key={name} />)}
-			{image && <meta name="og:image" content={image} />}
+			{image && <meta property="og:image" content={image} />}
 			{keywords && <meta name="keywords" content={keywords} />}
 			<script
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{
-					__html: `{"@context":"http://schema.org","@type":"WebSite","name":"nathan-abela.github.io","alternateName":"Nathan Abela","url":"https://nathan-abela.github.io/","description":"Software Engineer with focus on Angular and Stencil.js.","image":"${image}"}`,
+					__html: `{"@context":"http://schema.org","@type":"WebSite","name":"nathan-abela.github.io","alternateName":"Nathan Abela","url":"${SITE_URL}/","description":"Software Engineer from Malta building web and mobile products with TypeScript, Angular, and Next.js.","image":"${image}"}`,
 				}}
 			/>
 		</Head>
