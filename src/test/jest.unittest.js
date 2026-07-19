@@ -17,6 +17,7 @@ module.exports = {
 		'^Organisms(.*)$': '<rootDir>/components/organisms$1',
 		'^Templates(.*)$': '<rootDir>/components/templates$1',
 		// Other folders
+		'^Config(.*)$': '<rootDir>/config$1',
 		'^@Types(.*)$': '<rootDir>/@types$1',
 		'^Public(.*)$': '<rootDir>/public$1',
 		'^Pages(.*)$': '<rootDir>/pages$1',

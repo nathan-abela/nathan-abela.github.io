@@ -1,7 +1,6 @@
 import { FC } from 'react';
 import Head from 'next/head';
-
-const SITE_URL = 'https://nathan-abela.github.io';
+import { siteConfig } from 'Config/site';
 
 export interface HeadProps {
 	title: string;
@@ -20,12 +19,12 @@ const SeoHead: FC<HeadProps> = ({
 	title,
 	description,
 	path = '/',
-	author = 'Nathan Abela',
+	author = siteConfig.name,
 	keywords,
-	image = `${SITE_URL}/og.png`,
+	image = `${siteConfig.url}/og.png`,
 	meta,
 }) => {
-	const url = `${SITE_URL}${path}`;
+	const url = `${siteConfig.url}${path}`;
 
 	return (
 		<Head>
@@ -41,11 +40,15 @@ const SeoHead: FC<HeadProps> = ({
 				meta.length > 0 &&
 				meta.map(({ name, content }) => <meta name={name} content={content} key={name} />)}
 			{image && <meta property="og:image" content={image} />}
+			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:title" content={title} />
+			<meta name="twitter:description" content={description} />
+			{image && <meta name="twitter:image" content={image} />}
 			{keywords && <meta name="keywords" content={keywords} />}
 			<script
 				type="application/ld+json"
 				dangerouslySetInnerHTML={{
-					__html: `{"@context":"http://schema.org","@type":"WebSite","name":"nathan-abela.github.io","alternateName":"Nathan Abela","url":"${SITE_URL}/","description":"Software Engineer from Malta building web applications with TypeScript, Stencil.js, and Next.js.","image":"${image}"}`,
+					__html: `{"@context":"http://schema.org","@graph":[{"@type":"WebSite","name":"nathan-abela.github.io","alternateName":"${siteConfig.name}","url":"${siteConfig.url}/","description":"${siteConfig.description}","image":"${image}"},{"@type":"Person","name":"${siteConfig.name}","jobTitle":"${siteConfig.jobTitle}","url":"${siteConfig.url}/","sameAs":["${siteConfig.links.github}","${siteConfig.links.linkedin}","${siteConfig.links.youtube}"]}]}`,
 				}}
 			/>
 		</Head>

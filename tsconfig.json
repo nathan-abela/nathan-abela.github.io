@@ -32,6 +32,9 @@
         "./src/components/templates/*"
       ],
       // Other folders
+      "Config/*": [
+        "./src/config/*"
+      ],
       "@Types": [
         "./@types/"
       ],
