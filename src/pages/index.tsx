@@ -36,7 +36,7 @@ function Home({ education, jobs }: IProps) {
 					<div style={{ marginTop: 32, marginBottom: 32 }}>
 						<Image
 							src="/profilePicture.jpg"
-							alt="Nathan Abela profile picture"
+							alt={`${siteConfig.name} profile picture`}
 							width={180}
 							height={180}
 						/>
