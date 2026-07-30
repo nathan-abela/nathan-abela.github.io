@@ -13,6 +13,22 @@ export const GlobalStyles = createGlobalStyle`
 		transition: all 0.3s ease;
 	}
 
+	.skip-link {
+		position: fixed;
+		top: -100px;
+		left: 16px;
+		z-index: 1100;
+		padding: 8px 16px;
+		border: 1px solid ${({ theme }) => theme.primary};
+		border-radius: 0 0 4px 4px;
+		background: ${({ theme }) => theme.body};
+		transition: top 0.2s ease;
+
+		&:focus {
+			top: 0;
+		}
+	}
+
 	h1, h2, h3, h4, h5, h6 {
 		color: ${({ theme }) => theme.headline};
 	}

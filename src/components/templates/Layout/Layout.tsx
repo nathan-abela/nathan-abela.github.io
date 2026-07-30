@@ -12,8 +12,11 @@ interface LayoutProps {
 const Layout: FC<LayoutProps> = ({ children }) => {
 	return (
 		<StyledLayout>
+			<a className="skip-link" href="#main-content">
+				Skip to content
+			</a>
 			<Header />
-			<main>{children}</main>
+			<main id="main-content">{children}</main>
 			<Footer />
 		</StyledLayout>
 	);

@@ -14,6 +14,7 @@ const TechnologyIcons: FC = () => {
 							href="https://www.javascript.com"
 							target="_blank"
 							rel="noopener noreferrer"
+							aria-label="JavaScript"
 							title="JavaScript"
 						>
 							<Icon icon="JAVASCRIPT" />
@@ -27,6 +28,7 @@ const TechnologyIcons: FC = () => {
 							href="https://www.typescriptlang.org"
 							target="_blank"
 							rel="noopener noreferrer"
+							aria-label="TypeScript"
 							title="TypeScript"
 						>
 							<Icon icon="TYPESCRIPT" />
@@ -40,6 +42,7 @@ const TechnologyIcons: FC = () => {
 							href="https://angular.io"
 							target="_blank"
 							rel="noopener noreferrer"
+							aria-label="Angular"
 							title="Angular"
 						>
 							<Icon icon="ANGULAR" />
@@ -53,6 +56,7 @@ const TechnologyIcons: FC = () => {
 							href="https://stenciljs.com"
 							target="_blank"
 							rel="noopener noreferrer"
+							aria-label="StencilJS"
 							title="StencilJS"
 						>
 							<Icon icon="STENCILJS" />
@@ -66,6 +70,7 @@ const TechnologyIcons: FC = () => {
 							href="https://nextjs.org"
 							target="_blank"
 							rel="noopener noreferrer"
+							aria-label="NextJS"
 							title="NextJS"
 						>
 							<Icon icon="NEXTJS" />
@@ -79,6 +84,7 @@ const TechnologyIcons: FC = () => {
 							href="https://storybook.js.org"
 							target="_blank"
 							rel="noopener noreferrer"
+							aria-label="Storybook"
 							title="Storybook"
 						>
 							<Icon icon="STORYBOOK" />
@@ -92,6 +98,7 @@ const TechnologyIcons: FC = () => {
 							href="https://www.python.org"
 							target="_blank"
 							rel="noopener noreferrer"
+							aria-label="Python"
 							title="Python"
 						>
 							<Icon icon="PYTHON" />
@@ -105,6 +112,7 @@ const TechnologyIcons: FC = () => {
 							href="https://playwright.dev"
 							target="_blank"
 							rel="noopener noreferrer"
+							aria-label="Playwright"
 							title="Playwright"
 						>
 							<Icon icon="PLAYWRIGHT" />

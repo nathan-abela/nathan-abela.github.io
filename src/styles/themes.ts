@@ -5,7 +5,7 @@ export const brandColours = {
 	blackVariant: '#000000be',
 	grey: '#b2b2b2',
 	primary: '#e71837',
-	primaryVariant: '#e8213f',
+	primaryVariant: '#d81733',
 };
 
 export const darkTheme = {

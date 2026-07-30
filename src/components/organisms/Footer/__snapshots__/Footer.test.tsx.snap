@@ -23,6 +23,7 @@ exports[`Footer renders correctly 1`] = `
         >
           <li>
             <a
+              aria-label="GitHub profile"
               href="https://github.com/nathan-abela"
               rel="noopener noreferrer"
               target="_blank"
@@ -33,6 +34,7 @@ exports[`Footer renders correctly 1`] = `
           </li>
           <li>
             <a
+              aria-label="LinkedIn profile"
               href="https://www.linkedin.com/in/nathan-abela"
               rel="noopener noreferrer"
               target="_blank"
@@ -43,6 +45,7 @@ exports[`Footer renders correctly 1`] = `
           </li>
           <li>
             <a
+              aria-label="YouTube channel"
               href="https://www.youtube.com/@nathanabela"
               rel="noopener noreferrer"
               target="_blank"
@@ -53,6 +56,7 @@ exports[`Footer renders correctly 1`] = `
           </li>
           <li>
             <a
+              aria-label="Send an email"
               href="mailto:nathanabela7@gmail.com"
               rel="noopener noreferrer"
               target="_blank"

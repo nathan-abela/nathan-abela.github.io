@@ -20,6 +20,7 @@ const ThemeToggle = () => {
 	return (
 		<StyledThemeToggle
 			onClick={handleToggle}
+			aria-label={`Switch to ${isLightTheme ? 'dark' : 'light'} theme`}
 			title={`Switch to ${isLightTheme ? 'dark' : 'light'} theme`}
 		>
 			{isLightTheme ? <Dark /> : <Light />}

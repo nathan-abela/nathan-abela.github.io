@@ -5,6 +5,12 @@ exports[`Layout renders correctly 1`] = `
   <div
     class="styles__StyledLayout-sc-10u3re6-0 gmhIHB"
   >
+    <a
+      class="skip-link"
+      href="#main-content"
+    >
+      Skip to content
+    </a>
     <header>
       <div
         class="styles__StyledContainer-sc-a6yh8x-0 earCTD"
@@ -67,6 +73,7 @@ exports[`Layout renders correctly 1`] = `
                   class="desktop-only"
                 >
                   <button
+                    aria-label="Switch to light theme"
                     class="styles__StyledThemeToggle-sc-1b7mai8-0 kHwexB"
                     title="Switch to light theme"
                   >
@@ -84,6 +91,7 @@ exports[`Layout renders correctly 1`] = `
             >
               <li>
                 <button
+                  aria-label="Switch to light theme"
                   class="styles__StyledThemeToggle-sc-1b7mai8-0 kHwexB"
                   title="Switch to light theme"
                 >
@@ -146,6 +154,7 @@ exports[`Layout renders correctly 1`] = `
                     class="desktop-only"
                   >
                     <button
+                      aria-label="Switch to light theme"
                       class="styles__StyledThemeToggle-sc-1b7mai8-0 kHwexB"
                       title="Switch to light theme"
                     >
@@ -159,7 +168,9 @@ exports[`Layout renders correctly 1`] = `
         </div>
       </div>
     </header>
-    <main>
+    <main
+      id="main-content"
+    >
       Test Content
     </main>
     <footer
@@ -183,6 +194,7 @@ exports[`Layout renders correctly 1`] = `
           >
             <li>
               <a
+                aria-label="GitHub profile"
                 href="https://github.com/nathan-abela"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -193,6 +205,7 @@ exports[`Layout renders correctly 1`] = `
             </li>
             <li>
               <a
+                aria-label="LinkedIn profile"
                 href="https://www.linkedin.com/in/nathan-abela"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -203,6 +216,7 @@ exports[`Layout renders correctly 1`] = `
             </li>
             <li>
               <a
+                aria-label="YouTube channel"
                 href="https://www.youtube.com/@nathanabela"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -213,6 +227,7 @@ exports[`Layout renders correctly 1`] = `
             </li>
             <li>
               <a
+                aria-label="Send an email"
                 href="mailto:nathanabela7@gmail.com"
                 rel="noopener noreferrer"
                 target="_blank"

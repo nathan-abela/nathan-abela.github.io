@@ -13,6 +13,7 @@ const SocialIcons: FC = () => {
 					href={siteConfig.links.github}
 					target="_blank"
 					rel="noopener noreferrer"
+					aria-label="GitHub profile"
 					title="Github"
 				>
 					<Icon icon="GITHUB" />
@@ -24,6 +25,7 @@ const SocialIcons: FC = () => {
 					href={siteConfig.links.linkedin}
 					target="_blank"
 					rel="noopener noreferrer"
+					aria-label="LinkedIn profile"
 					title="LinkedIn"
 				>
 					<Icon icon="LINKEDIN" />
@@ -35,6 +37,7 @@ const SocialIcons: FC = () => {
 					href={siteConfig.links.youtube}
 					target="_blank"
 					rel="noopener noreferrer"
+					aria-label="YouTube channel"
 					title="YouTube"
 				>
 					<Icon icon="YOUTUBE" />
@@ -46,6 +49,7 @@ const SocialIcons: FC = () => {
 					href={`mailto:${siteConfig.links.email}`}
 					target="_blank"
 					rel="noopener noreferrer"
+					aria-label="Send an email"
 					title="Email"
 				>
 					<Icon icon="EMAIL" />
